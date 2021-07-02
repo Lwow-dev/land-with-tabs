@@ -1,0 +1,300 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-09 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: casinos/templates/base.html:100 casinos/templates/review.html:749
+msgid "Casino"
+msgstr "Казино"
+
+#: casinos/templates/base.html:100
+msgid "Review"
+msgstr "Преглед"
+
+#: casinos/templates/base.html:112
+msgid "Your Promo Code"
+msgstr "Вашият промо код"
+
+#: casinos/templates/base.html:112 casinos/templates/review.html:27
+msgid "First deposit bonus"
+msgstr "Бонус за първи депозит"
+
+#: casinos/templates/base.html:113 casinos/templates/review.html:28
+#: casinos/templates/review.html:157 casinos/templates/review.html:174
+msgid "€"
+msgstr "€"
+
+#: casinos/templates/base.html:129
+msgid "Expert Review (c) All rights reserved"
+msgstr "Експертен преглед (c) Всички права запазени"
+
+#: casinos/templates/review.html:5
+msgid "Landing 22 bet"
+msgstr "Начало 22 залог"
+
+#: casinos/templates/review.html:15
+msgid "Show more"
+msgstr "Покажи повече"
+
+#: casinos/templates/review.html:16
+msgid "Show less"
+msgstr "Покажи по-малко"
+
+#: casinos/templates/review.html:29
+msgid "Claim Bonus"
+msgstr "Заяви бонус"
+
+#: casinos/templates/review.html:36
+msgid "Quality"
+msgstr "Качество"
+
+#: casinos/templates/review.html:66
+msgid "Bonuses"
+msgstr "Бонуси"
+
+#: casinos/templates/review.html:90
+msgid "Payouts"
+msgstr "Печалби"
+
+#: casinos/templates/review.html:117
+msgid "Games"
+msgstr "Игри"
+
+#: casinos/templates/review.html:147
+msgid "License"
+msgstr "Лиценз"
+
+#: casinos/templates/review.html:156
+msgid "Min deposit"
+msgstr "Минимален депозит"
+
+#: casinos/templates/review.html:169
+msgid "WELCOME BONUS"
+msgstr "БОНУС ЗА ДОБРЕ ДОШЛИ"
+
+#: casinos/templates/review.html:173
+msgid "Up To"
+msgstr "До"
+
+#: casinos/templates/review.html:177
+msgid "FREE SPINS"
+msgstr "БЕЗПЛАТНИ ЗАВЪРТАНИЯ"
+
+#: casinos/templates/review.html:186
+msgid "Payment methods"
+msgstr "Начини на плащане"
+
+#: casinos/templates/review.html:187 casinos/templates/review.html:787
+msgid "The"
+msgstr "Казиното "
+
+#: casinos/templates/review.html:187
+msgid ""
+"casino has a variety of payment methods that ensure a fast and error-free "
+"withdrawal process"
+msgstr "има разнообразни начини на плащане, които осигуряват бърз и без грешки процес на теглене"
+
+#: casinos/templates/review.html:189
+msgid ""
+"All of the following payment methods can be used both for replenishment and withdrawal of funds.Transfers cannot be canceled. Once payments or deposits "
+"have been made, they cannot be changed by either an individual or a casino"
+msgstr "Всеки от следните методи на плащане може да се използва както за попълване, така и за теглене на средства. Трансферите не могат да бъдат отменени. След като плащанията или депозитите са направени, те не могат да бъдат променяни нито от физическо лице, нито от казино"
+
+#: casinos/templates/review.html:685
+msgid "Registration"
+msgstr "Регистрация"
+
+#: casinos/templates/review.html:692
+msgid "Advantages"
+msgstr "Предимства"
+
+#: casinos/templates/review.html:695 casinos/templates/review.html:710
+msgid "Players get big bonuses every weekend!"
+msgstr "Играчите получават големи бонуси всеки уикенд"
+
+#: casinos/templates/review.html:698 casinos/templates/review.html:713
+msgid "Promotions and bonus program for VIP players!"
+msgstr "Промоции и бонус програма за VIP играчи"
+
+#: casinos/templates/review.html:701 casinos/templates/review.html:716
+msgid "The biggest jackpots and easy withdrawals!"
+msgstr "Най-големите джакпоти и лесни тегления"
+
+#: casinos/templates/review.html:704 casinos/templates/review.html:719
+msgid "Games with live dealers!"
+msgstr "Игри с дилъри на живо"
+
+#: casinos/templates/review.html:723 casinos/templates/review.html:772
+#: casinos/templates/review.html:807 casinos/templates/review.html:836
+#: casinos/templates/review.html:861
+msgid "Play now"
+msgstr "Играй сега"
+
+#: casinos/templates/review.html:747
+msgid "Software Providers"
+msgstr "Доставчици на софтуер"
+
+#: casinos/templates/review.html:749
+msgid ""
+"online partners with a huge list of software providers. We employ such "
+"companies as Yggdrasil, NetEnt, Amatic, Microgaming, and many others"
+msgstr "онлайн партньори с огромен списък от доставчици на софтуер. Използваме компании като Yggdrasil, NetEnt, Amatic, Microgaming и много други"
+
+#: casinos/templates/review.html:753
+msgid ""
+"This means that all the games presented on our site are of high quality, "
+"excellent design, and variety"
+msgstr "Това означава, че всички игри, представени на нашия сайт, са с високо качество, отличен дизайн и разнообразие"
+
+#: casinos/templates/review.html:760
+msgid "Ways to play"
+msgstr "Начини за игра"
+
+#: casinos/templates/review.html:763
+msgid "Directly in your browser"
+msgstr "Директно във вашия браузър"
+
+#: casinos/templates/review.html:766
+msgid "Mobile app. It can be used on both IOS and Android"
+msgstr "Мобилно приложение. Може да се използва както на IOS, така и на Android"
+
+#: casinos/templates/review.html:769
+msgid "Download the application to your computer"
+msgstr "Изтеглете приложението на вашия компютър"
+
+#: casinos/templates/review.html:781
+msgid "Casino games"
+msgstr "Казино игри"
+
+#: casinos/templates/review.html:783
+msgid ""
+"All of our games are self-adapting to the size of your device, so there is "
+"no limit to your entertainment! They have also been translated into most of "
+"the world&apos;s languages"
+msgstr "Всички наши игри се адаптират към размера на вашето устройство, така че няма ограничение за вашето забавление! Те също са преведени на повечето от световните езици"
+
+#: casinos/templates/review.html:787
+msgid ""
+"website is updated almost every day, which means that you will find "
+"something new and incredibly interesting for yourself every time"
+msgstr "уебсайтът се актуализира почти всеки ден, което означава, че ще намерите нещо ново и невероятно интересно за себе си всеки път"
+
+#: casinos/templates/review.html:815
+msgid "Vip access"
+msgstr "Vip достъп"
+
+#: casinos/templates/review.html:819 casinos/templates/review.html:843
+msgid "Unlimited access"
+msgstr "Неограничен достъп"
+
+#: casinos/templates/review.html:820 casinos/templates/review.html:844
+msgid ""
+"All games, bonuses, promotions, exclusive tournaments are available to you"
+msgstr "Всички игри, бонуси, промоции, ексклузивни турнири са на ваше разположение"
+
+#: casinos/templates/review.html:825 casinos/templates/review.html:849
+msgid "Personal guide manager"
+msgstr "Персонален мениджър съветник"
+
+#: casinos/templates/review.html:826 casinos/templates/review.html:850
+msgid "Works 24/7, answer any of your questions as soon as possible"
+msgstr "Работи 24/7, отговори на всеки ваш въпрос възможно най-скоро"
+
+#: casinos/templates/review.html:831 casinos/templates/review.html:855
+msgid "Faster payouts"
+msgstr "Ускорени плащания"
+
+#: casinos/templates/review.html:832 casinos/templates/review.html:856
+msgid "More prizes with the highest payouts. Money is withdrawn out of turn"
+msgstr "Повече награди с най-високите печалби. Ускорено изтегляне на парите"
+
+#: casinos/templates/review.html:871 casinos/templates/review.html:880
+msgid "User Interface"
+msgstr "Потребителски интерфейс"
+
+#: casinos/templates/review.html:878
+msgid "Interface"
+msgstr "Интерфейс"
+
+#: casinos/templates/review.html:878
+msgid "User"
+msgstr "Потребител"
+
+#: casinos/templates/review.html:881
+msgid ""
+"Design and functionality! According to polls, 87&#37; of users liked the "
+"color scheme and structure of"
+msgstr "Дизайн и функционалност! Според анкети от потребителите са харесали цветовата схема и структура на"
+
+#: casinos/templates/review.html:881
+msgid "website and application"
+msgstr "уебсайта и приложението"
+
+#: casinos/templates/review.html:882
+msgid "It is easy to navigate and find exactly what you need."
+msgstr "С лесна навигация, за да намерите точно това, което ви трябва."
+
+#: casinos/templates/review.html:884 casinos/templates/review.html:918
+msgid "Visit Website"
+msgstr "Към уебсайта"
+
+#: casinos/templates/review.html:892
+msgid "Support"
+msgstr "Поддръжка"
+
+#: casinos/templates/review.html:896
+msgid ""
+"Casino Online has various types of support.You can choose the option that is "
+"most convenient for you from email, phone, or our 24/7 chat"
+msgstr "Casino Online има различни видове поддръжка. Можете да изберете опцията, която е най-удобна за вас: имейл, телефон или нашия 24/7 чат"
+
+#: casinos/templates/review.html:897
+msgid ""
+"If the request is very urgent, it is better to use chat or telephone support "
+"- they work 24/7"
+msgstr "Ако заявката е много спешна, по-добре е да използвате чат или телефон - те работят 24/7"
+
+#: casinos/templates/review.html:898
+msgid ""
+"If the issue needs to be considered in great detail, it is better to write "
+"to us by mail"
+msgstr "Ако проблемът трябва да бъде разгледан по-подробно, по-добре е да ни пишете по имейл"
+
+#: casinos/templates/review.html:900
+msgid ""
+"You don&apos;t have to worry about the language barrier. Support works in a "
+"variety of languages around the world"
+msgstr "Не е нужно да се притеснявате за езиковата бариера. Поддръжката работи на разнообразие от световните езици"
+
+#: casinos/templates/review.html:905
+msgid "Communication options"
+msgstr "Опции за комуникация"
+
+#: casinos/templates/review.html:908
+msgid "Chat"
+msgstr "Чат"
+
+#: casinos/templates/review.html:911
+msgid "Phone call"
+msgstr "Телефонно обаждане"
+
+#: casinos/templates/review.html:914
+msgid "Mail"
+msgstr "Имейл"
+
+

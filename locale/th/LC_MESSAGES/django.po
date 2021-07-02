@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-09 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: casinos/templates/base.html:100 casinos/templates/review.html:749
+msgid "Casino"
+msgstr "คาสิโน"
+
+#: casinos/templates/base.html:100
+msgid "Review"
+msgstr "รีวิว"
+
+#: casinos/templates/base.html:112
+msgid "Your Promo Code"
+msgstr "รหัสโปรโมชั่นของคุณ"
+
+#: casinos/templates/base.html:112 casinos/templates/review.html:27
+msgid "First deposit bonus"
+msgstr "โบนัสการฝากเงินครั้งแรก"
+
+#: casinos/templates/base.html:113 casinos/templates/review.html:28
+#: casinos/templates/review.html:157 casinos/templates/review.html:174
+msgid "€"
+msgstr "$"
+
+#: casinos/templates/base.html:129
+msgid "Expert Review (c) All rights reserved"
+msgstr "Expert Review (c) สงวนลิขสิทธิ์"
+
+#: casinos/templates/review.html:5
+msgid "Landing 22 bet"
+msgstr "หน้าแรก 22 bet"
+
+#: casinos/templates/review.html:15
+msgid "Show more"
+msgstr "แสดงเพิ่มขึ้น"
+
+#: casinos/templates/review.html:16
+msgid "Show less"
+msgstr "แสดงน้อยลง"
+
+#: casinos/templates/review.html:29
+msgid "Claim Bonus"
+msgstr "เคลมโบนัส"
+
+#: casinos/templates/review.html:36
+msgid "Quality"
+msgstr "จำนวน"
+
+#: casinos/templates/review.html:66
+msgid "Bonuses"
+msgstr "โบนัส"
+
+#: casinos/templates/review.html:90
+msgid "Payouts"
+msgstr "การจ่ายเงิน"
+
+#: casinos/templates/review.html:117
+msgid "Games"
+msgstr "เกม"
+
+#: casinos/templates/review.html:147
+msgid "License"
+msgstr "ใบอนุญาต"
+
+#: casinos/templates/review.html:156
+msgid "Min deposit"
+msgstr "การฝากเงินขั้นต่ำ"
+
+#: casinos/templates/review.html:169
+msgid "WELCOME BONUS"
+msgstr "โบนัสต้อนรับ"
+
+#: casinos/templates/review.html:173
+msgid "Up To"
+msgstr "สูงสุด"
+
+#: casinos/templates/review.html:177
+msgid "FREE SPINS" 
+msgstr "ฟรีสปิน"
+
+#: casinos/templates/review.html:186
+msgid "Payment methods"
+msgstr "วิธีการชำระเงิน"
+
+#: casinos/templates/review.html:187 casinos/templates/review.html:787
+msgid "The"
+msgstr ""
+
+#: casinos/templates/review.html:187
+msgid ""
+"casino has a variety of payment methods that ensure a fast and error-free "
+"withdrawal process"
+msgstr "คาสิโนนี้มีวิธีการถอนเงินที่หลากหลายที่ทำให้มั่นใจได้ว่ากระบวนการถอนเงิน จะปราศจากข้อผิดพลาด"
+
+#: casinos/templates/review.html:189
+msgid ""
+"All of the following payment methods can be used both for replenishment and "
+"withdrawal of funds.Transfers cannot be canceled. Once payments or deposits "
+"have been made, they cannot be changed by either an individual or a casino"
+msgstr "วิธีการชำระเงินทั้งหมดต่อไปนี้สามารถใช้ได้ทั้งสำหรับการเติมเงินและ การถอนเงิน การโอนเงินไม่สามารถยกเลิกได้ เมื่อการชำระเงินหรือการฝากเงิน ได้ทำขึ้นแล้ว การดำเนินการเหล่านั้นจะไม่สามารถเปลี่ยนแปลงได้ทั้งโดยบุคคลหรือคาสิโน"
+
+#: casinos/templates/review.html:685
+msgid "Registration"
+msgstr "การลงทะเบียน"
+
+#: casinos/templates/review.html:692
+msgid "Advantages"
+msgstr "ข้อได้เปรียบ"
+
+#: casinos/templates/review.html:695 casinos/templates/review.html:710
+msgid "Players get big bonuses every weekend!"
+msgstr "ผู้เล่นจะได้รับโบนัสก้อนโตทุกสุดสัปดาห์"
+
+#: casinos/templates/review.html:698 casinos/templates/review.html:713
+msgid "Promotions and bonus program for VIP players!"
+msgstr "โปรโมชั่นและโปรแกรมโบนัสสำหรับผู้เล่น VIP"
+
+#: casinos/templates/review.html:701 casinos/templates/review.html:716
+msgid "The biggest jackpots and easy withdrawals!"
+msgstr "แจ็คพ็อตใหญ่ที่สุดและถอนเงินได้ง่าย"
+
+#: casinos/templates/review.html:704 casinos/templates/review.html:719
+msgid "Games with live dealers!"
+msgstr "เกมมากมายพร้อมเจ้ามือสด"
+
+#: casinos/templates/review.html:723 casinos/templates/review.html:772
+#: casinos/templates/review.html:807 casinos/templates/review.html:836
+#: casinos/templates/review.html:861
+msgid "Play now"
+msgstr "เริ่มเล่นเดี๋ยวนี้"
+
+#: casinos/templates/review.html:747
+msgid "Software Providers"
+msgstr "ผู้ให้บริการซอฟต์แวร์"
+
+#: casinos/templates/review.html:749
+msgid ""
+"online partners with a huge list of software providers. We employ such "
+"companies as Yggdrasil, NetEnt, Amatic, Microgaming, and many others"
+msgstr "พันธมิตรออนไลน์พร้อมผู้ให้บริการซอฟต์แวร์มากมาย เราจ้างบริษัทอย่าง  Yggdrasil, NetEnt, Amatic, Microgaming, และอื่น ๆ อีกมากมาย"
+
+#: casinos/templates/review.html:753
+msgid ""
+"This means that all the games presented on our site are of high quality, "
+"excellent design, and variety"
+msgstr "ซึ่งหมายถึงเกมทั้งหมดที่มีบนไซต์ของเราเป็นเกมที่มีคุณภาพสูง มีดีไซน์ที่ยอดเยี่ยม และมีความหลากหลาย"
+
+#: casinos/templates/review.html:760
+msgid "Ways to play"
+msgstr "หลากหลายวิธีเล่น"
+
+#: casinos/templates/review.html:763
+msgid "Directly in your browser"
+msgstr "เล่นโดยตรงจากเบราเซอร์ของคุณ"
+
+#: casinos/templates/review.html:766
+msgid "Mobile app. It can be used on both IOS and Android"
+msgstr "โมบายล์แอป ที่สามารถใช้ได้ทั้งบน IOS และ Android"
+
+#: casinos/templates/review.html:769
+msgid "Download the application to your computer"
+msgstr "ดาวน์โหลดแอปพลิเคชันลงบนคอมพิวเตอร์ของคุณ"
+
+#: casinos/templates/review.html:781
+msgid "Casino games"
+msgstr "เกมคาสิโน"
+
+#: casinos/templates/review.html:783
+msgid ""
+"All of our games are self-adapting to the size of your device, so there is "
+"no limit to your entertainment! They have also been translated into most of "
+"the world&apos;s languages"
+msgstr "เกมของเราทุกเกมได้รับการปรับแต่งให้มีขนาดเหมาะกับอุปกรณ์ของคุณ ดังนั้น จึงไม่มีข้อจำกัดกับความบันเทิงของคุณ! เกมเหล่านี้ได้รับการแปลเป็น  ทุกภาษาในโลก"
+
+#: casinos/templates/review.html:787
+msgid ""
+"website is updated almost every day, which means that you will find "
+"something new and incredibly interesting for yourself every time"
+msgstr "เว็บไซต์ได้รับการอัปเดตเกือบทุกวัน ซึ่งหมายความว่าคุณจะได้พบ สิ่งใหม่ ๆ และสิ่งที่น่าสนใจที่น่าทึ่งสำหรับตัวคุณเองได้ทุกวัน"
+
+#: casinos/templates/review.html:815
+msgid "Vip access"
+msgstr "การเข้าถึงระดับ VIP"
+
+#: casinos/templates/review.html:819 casinos/templates/review.html:843
+msgid "Unlimited access"
+msgstr "การเข้าถึงแบบไม่จำกัด"
+
+#: casinos/templates/review.html:820 casinos/templates/review.html:844
+msgid ""
+"All games, bonuses, promotions, exclusive tournaments are available to you"
+msgstr "คุณสามารถใช้เกม โบนัส โปรโมชั่น และทัวร์นาเมนต์พิเศษได้ทั้งหมด"
+
+#: casinos/templates/review.html:825 casinos/templates/review.html:849
+msgid "Personal guide manager"
+msgstr "ผู้จัดการแนะนำการใช้งานส่วนตัว"
+
+#: casinos/templates/review.html:826 casinos/templates/review.html:850
+msgid "Works 24/7, answer any of your questions as soon as possible"
+msgstr "ทำงานตลอด 24/7 คอยตอบทุกคำถามของคุณในทันทีทันใด"
+
+#: casinos/templates/review.html:831 casinos/templates/review.html:855
+msgid "Faster payouts"
+msgstr "การจ่ายเงินที่รวดเร็วกว่า"
+
+#: casinos/templates/review.html:832 casinos/templates/review.html:856
+msgid "More prizes with the highest payouts. Money is withdrawn out of turn"
+msgstr "รางวัลมากกว่าพร้อมการจ่ายที่สูงที่สุด เงินที่ถอนจะถูกดำเนินการทันใจ"
+
+#: casinos/templates/review.html:871 casinos/templates/review.html:880
+msgid "User Interface"
+msgstr "อินเทอร์เฟซผู้ใช้"
+
+#: casinos/templates/review.html:878
+msgid "Interface"
+msgstr "อินเทอร์เฟซ"
+
+#: casinos/templates/review.html:878
+msgid "User"
+msgstr "ผู้ใช้"
+
+#: casinos/templates/review.html:881
+msgid ""
+"Design and functionality! According to polls, 87&#37; of users liked the "
+"color scheme and structure of"
+msgstr "ดีไซน์และการใช้งาน! ตามโพลล์ของผู้ใช้นั้นชื่นชอบ โทนสีและโครงสร้างของ"
+
+#: casinos/templates/review.html:881
+msgid "website and application"
+msgstr "เว็บไซต์และแอปพลิเคชัน"
+
+#: casinos/templates/review.html:882
+msgid "It is easy to navigate and find exactly what you need."
+msgstr "มันง่ายที่จะใช้และค้นหาสิ่งที่คุณต้องการ"
+
+#: casinos/templates/review.html:884 casinos/templates/review.html:918
+msgid "Visit Website"
+msgstr "แวะชมเว็บไซต์"
+
+#: casinos/templates/review.html:892
+msgid "Support"
+msgstr "การสนับสนุน"
+
+#: casinos/templates/review.html:896
+msgid ""
+"Casino Online has various types of support.You can choose the option that is "
+"most convenient for you from email, phone, or our 24/7 chat"
+msgstr "คาสิโนออนไลน์มีการสนับสนุนหลากหลายประเภท คุณสามารถเลือกตัวเลือกที่  สะดวกที่สุดสำหรับคุณ รวมถึงอีเมล โทรศัพท์ หรือแชท 24/7 ตลอดเวลาของเรา"
+
+#: casinos/templates/review.html:897
+msgid ""
+"If the request is very urgent, it is better to use chat or telephone support "
+"- they work 24/7"
+msgstr "หากคำร้องขอของคุณเป็นเรื่องเร่งด่วน คุณควรใช้การสนับสนุนผ่านแชทหรือโทรศัพท์ - การสนับสนุนเหล่านี้ให้บริการตลอดเวลา 24/7"
+
+#: casinos/templates/review.html:898
+msgid ""
+"If the issue needs to be considered in great detail, it is better to write "
+"to us by mail"
+msgstr "หากปัญหาจำเป็นต้องได้รับการพิจารณาโดยละเอียด ควรติดต่อถึงเรา ด้วยการใช้เมล"
+
+#: casinos/templates/review.html:900
+msgid ""
+"You don&apos;t have to worry about the language barrier. Support works in a "
+"variety of languages around the world"
+msgstr "คุณไม่ต้องกังวลเกี่ยวกับอุปสรรคด้านภาษา การสนับสนุนของเราทำงาน "
+"ด้วยภาษาหลากหลายภาษาทั่วโลก"
+
+#: casinos/templates/review.html:905
+msgid "Communication options"
+msgstr "ตัวเลือกการสื่อสาร"
+
+#: casinos/templates/review.html:908
+msgid "Chat"
+msgstr "แชท"
+
+#: casinos/templates/review.html:911
+msgid "Phone call"
+msgstr "โทรศัพท์"
+
+#: casinos/templates/review.html:914
+msgid "Mail"
+msgstr "เมล"
+
+
+

@@ -1,0 +1,1942 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load thumbnail %}
+
+	{% block title %}{% trans 'Landing 22 bet' %}{% endblock %}
+		
+		{% block main %}
+			{% if casino %}
+				<div class="top top-menu">
+					<div class="top__imagebox" style="background-image: url('/media/images/bg/{{ casino.color }}');">
+						<img src="{{ casino.logo.logo.url }}">
+					</div>
+					<div class="top__reputation">
+						<div class="rep-icon"><img src="/media/images/top-rep-icon.svg"></div>
+						<div class="rep-text">{% trans 'Perfect Reputation' %}</div>
+					</div>
+					<div class="top__btnsbox visit-btnsbox">
+						<a class="visit__btn visit__btn-orange" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">
+							{% trans 'Visit Casino' %}
+						</a>
+						<a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">
+							{% trans 'Browse recommended casinos' %}
+						</a>
+					</div>
+					<h2 class="top__pay-method-head"><img src="/media/images/top-pay-head-icon.svg"><span>{% trans 'Payment methods' %}</span></h2>
+					<div class="top__pay-method-box">
+						<div class="top__pay-logo-box">
+							{% if LANGUAGE_CODE == 'pl' %}
+								{% if casino.pay_pl.all %}
+									{% for pay in casino.pay_pl.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'de' %}
+								{% if casino.pay_de.all %}
+									{% for pay in casino.pay_de.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'cs' %}
+								{% if casino.pay_cs.all %}
+									{% for pay in casino.pay_cs.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'sk' %}
+								{% if casino.pay_sk.all %}
+									{% for pay in casino.pay_sk.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'it' %}
+								{% if casino.pay_it.all %}
+									{% for pay in casino.pay_it.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'hu' %}
+								{% if casino.pay_hu.all %}
+									{% for pay in casino.pay_hu.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'ro' %}
+								{% if casino.pay_ro.all %}
+									{% for pay in casino.pay_ro.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'sv' %}
+								{% if casino.pay_sv.all %}
+									{% for pay in casino.pay_sv.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'nl' %}
+								{% if casino.pay_nl.all %}
+									{% for pay in casino.pay_nl.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'au' %}
+								{% if casino.pay_au.all %}
+									{% for pay in casino.pay_au.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'ca' %}
+								{% if casino.pay_ca.all %}
+									{% for pay in casino.pay_ca.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'us' %}
+								{% if casino.pay_us.all %}
+									{% for pay in casino.pay_us.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'gb' %}
+								{% if casino.pay_gb.all %}
+									{% for pay in casino.pay_gb.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'br' %}
+								{% if casino.pay_br.all %}
+									{% for pay in casino.pay_br.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'fi' %}
+								{% if casino.pay_fi.all %}
+									{% for pay in casino.pay_fi.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'nz' %}
+								{% if casino.pay_nz.all %}
+									{% for pay in casino.pay_nz.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'no' %}
+								{% if casino.pay_no.all %}
+									{% for pay in casino.pay_no.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'da' %}
+								{% if casino.pay_da.all %}
+									{% for pay in casino.pay_da.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'es' %}
+								{% if casino.pay_es.all %}
+									{% for pay in casino.pay_es.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'at' %}
+								{% if casino.pay_at.all %}
+									{% for pay in casino.pay_at.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}	
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'be' %}
+								{% if casino.pay_be.all %}
+									{% for pay in casino.pay_be.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'bg' %}
+								{% if casino.pay_bg.all %}
+									{% for pay in casino.pay_bg.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}	
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'ch' %}
+								{% if casino.pay_ch.all %}
+									{% for pay in casino.pay_ch.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'fr' %}
+								{% if casino.pay_fr.all %}
+									{% for pay in casino.pay_fr.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'id' %}
+								{% if casino.pay_id.all %}
+									{% for pay in casino.pay_id.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'ie' %}
+								{% if casino.pay_ie.all %}
+									{% for pay in casino.pay_ie.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'in' %}
+								{% if casino.pay_in.all %}
+									{% for pay in casino.pay_in.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'jp' %}
+								{% if casino.pay_jp.all %}
+									{% for pay in casino.pay_jp.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'my' %}
+								{% if casino.pay_my.all %}
+									{% for pay in casino.pay_my.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'ph' %}
+								{% if casino.pay_ph.all %}
+									{% for pay in casino.pay_ph.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'sg' %}
+								{% if casino.pay_sg.all %}
+									{% for pay in casino.pay_sg.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'th' %}
+								{% if casino.pay_th.all %}
+									{% for pay in casino.pay_th.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'tr' %}
+								{% if casino.pay_tr.all %}
+									{% for pay in casino.pay_tr.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% elif LANGUAGE_CODE == 'za' %}
+								{% if casino.pay_za.all %}
+									{% for pay in casino.pay_za.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% else %}
+									{% for pay in casino.pay_en.all %}
+										{% if forloop.counter <= 16 %}
+										<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+										{% endif %}
+									{% endfor %}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<div class="container-md"> 
+					<div class="row">
+						<div class="col-12 col-md-4 col-lg-3 p-md-0">
+							<div class="sticky-container">
+								<div class="top">
+									<div class="top__imagebox" style="background-image: url('/media/images/bg/{{ casino.color }}');"><img src="{{ casino.logo.logo.url }}"></div>
+									<div class="top__reputation">
+										<div class="rep-icon"><img src="/media/images/top-rep-icon.svg"></div>
+										<div class="rep-text">{% trans 'Perfect Reputation' %}</div>
+									</div>
+									<div class="top__btnsbox visit-btnsbox">
+										<a class="visit__btn visit__btn-orange" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">
+											{% trans 'Visit Casino' %}
+										</a>
+										<a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">
+											{% trans 'Browse recommended casinos' %}
+										</a>
+									</div>
+									<h2 class="top__pay-method-head"><img src="/media/images/top-pay-head-icon.svg"><span>{% trans 'Payment methods' %}</span></h2>
+									<div class="top__pay-method-box">
+										<div class="top__pay-logo-box">
+											{% if LANGUAGE_CODE == 'pl' %}
+												{% if casino.pay_pl.all %}
+													{% for pay in casino.pay_pl.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'de' %}
+												{% if casino.pay_de.all %}
+													{% for pay in casino.pay_de.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'cs' %}
+												{% if casino.pay_cs.all %}
+													{% for pay in casino.pay_cs.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'sk' %}
+												{% if casino.pay_sk.all %}
+													{% for pay in casino.pay_sk.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'it' %}
+												{% if casino.pay_it.all %}
+													{% for pay in casino.pay_it.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'hu' %}
+												{% if casino.pay_hu.all %}
+													{% for pay in casino.pay_hu.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'ro' %}
+												{% if casino.pay_ro.all %}
+													{% for pay in casino.pay_ro.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'sv' %}
+												{% if casino.pay_sv.all %}
+													{% for pay in casino.pay_sv.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'nl' %}
+												{% if casino.pay_nl.all %}
+													{% for pay in casino.pay_nl.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'au' %}
+												{% if casino.pay_au.all %}
+													{% for pay in casino.pay_au.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'ca' %}
+												{% if casino.pay_ca.all %}
+													{% for pay in casino.pay_ca.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'us' %}
+												{% if casino.pay_us.all %}
+													{% for pay in casino.pay_us.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'gb' %}
+												{% if casino.pay_gb.all %}
+													{% for pay in casino.pay_gb.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'br' %}
+												{% if casino.pay_br.all %}
+													{% for pay in casino.pay_br.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'fi' %}
+												{% if casino.pay_fi.all %}
+													{% for pay in casino.pay_fi.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'nz' %}
+												{% if casino.pay_nz.all %}
+													{% for pay in casino.pay_nz.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'no' %}
+												{% if casino.pay_no.all %}
+													{% for pay in casino.pay_no.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'da' %}
+												{% if casino.pay_da.all %}
+													{% for pay in casino.pay_da.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'es' %}
+												{% if casino.pay_es.all %}
+													{% for pay in casino.pay_es.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'at' %}
+												{% if casino.pay_at.all %}
+													{% for pay in casino.pay_at.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}	
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'be' %}
+												{% if casino.pay_be.all %}
+													{% for pay in casino.pay_be.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'bg' %}
+												{% if casino.pay_bg.all %}
+													{% for pay in casino.pay_bg.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}	
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'ch' %}
+												{% if casino.pay_ch.all %}
+													{% for pay in casino.pay_ch.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'fr' %}
+												{% if casino.pay_fr.all %}
+													{% for pay in casino.pay_fr.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'id' %}
+												{% if casino.pay_id.all %}
+													{% for pay in casino.pay_id.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'ie' %}
+												{% if casino.pay_ie.all %}
+													{% for pay in casino.pay_ie.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'in' %}
+												{% if casino.pay_in.all %}
+													{% for pay in casino.pay_in.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'jp' %}
+												{% if casino.pay_jp.all %}
+													{% for pay in casino.pay_jp.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'my' %}
+												{% if casino.pay_my.all %}
+													{% for pay in casino.pay_my.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'ph' %}
+												{% if casino.pay_ph.all %}
+													{% for pay in casino.pay_ph.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'sg' %}
+												{% if casino.pay_sg.all %}
+													{% for pay in casino.pay_sg.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'th' %}
+												{% if casino.pay_th.all %}
+													{% for pay in casino.pay_th.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'tr' %}
+												{% if casino.pay_tr.all %}
+													{% for pay in casino.pay_tr.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% elif LANGUAGE_CODE == 'za' %}
+												{% if casino.pay_za.all %}
+													{% for pay in casino.pay_za.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+												{% endif %}
+											{% else %}
+													{% for pay in casino.pay_en.all %}
+														{% if forloop.counter <= 16 %}
+														<img src="{{ pay.logo.url }}" title="{{ pay.name }}" alt="{{ pay.name }}" >
+														{% endif %}
+													{% endfor %}
+											{% endif %}
+										</div>
+									</div>
+								</div>
+								<div class="top-forstick"></div>
+							</div>
+						</div>
+						<div class="col-12 col-md-8 col-lg-9 p-0">
+							<div class="tab">
+								<div class="tab__headers">
+									<ul class="nav nav-tabs">
+										<li class="nav-item tab__nav-item"><a class="nav-link active tab__btn" href="#tab-content-details" data-bs-toggle="tab">
+												<svg>
+													<use xlink:href="/media/images/sprites.svg#tab-header-details"></use>
+												</svg><span class="tab__btntext">{% trans 'Casino details' %}</span></a></li>
+										<li class="nav-item tab__nav-item">
+											<a class="nav-link tab__btn" href="#tab-content-bonuses" data-bs-toggle="tab">
+												<svg>
+													<use xlink:href="/media/images/sprites.svg#bonuses"></use>
+												</svg>
+												<span class="tab__btntext">
+													{% trans 'Bonuses' %}
+												</span>
+												<span class="tab__prefix prefix-orange">
+													{{ casino.bonus.all|length}}
+												</span>
+											</a>
+										</li>
+										<li class="nav-item tab__nav-item"><a class="nav-link tab__btn" href="#tab-content-rep" data-bs-toggle="tab">
+												<svg>
+													<use xlink:href="/media/images/sprites.svg#tab-header-rep"></use>
+												</svg><span class="tab__btntext">{% trans 'Reputation explained' %}</span></a></li>
+										<li class="nav-item tab__nav-item">
+											<a class="nav-link tab__btn" href="#tab-content-pay" data-bs-toggle="tab">
+												<svg>
+													<use xlink:href="/media/images/sprites.svg#tab-haeder-pay"></use>
+												</svg>
+												<span class="tab__btntext">{% trans 'Payment methods' %}</span>
+												<span class="tab__prefix prefix-orange">
+													{% if LANGUAGE_CODE == 'pl' %}
+														{% if casino.pay_pl.all %}
+															{{ casino.pay_pl.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'de' %}
+														{% if casino.pay_de.all %}
+															{{ casino.pay_de.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'cs' %}
+														{% if casino.pay_cs.all %}
+															{{ casino.pay_cs.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'sk' %}
+														{% if casino.pay_sk.all %}
+															{{ casino.pay_sk.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'it' %}
+														{% if casino.pay_it.all %}
+															{{ casino.pay_it.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'hu' %}
+														{% if casino.pay_hu.all %}
+															{{ casino.pay_hu.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'ro' %}
+														{% if casino.pay_ro.all %}
+															{{ casino.pay_ro.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'sv' %}
+														{% if casino.pay_sv.all %}
+															{{ casino.pay_sv.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'nl' %}
+														{% if casino.pay_nl.all %}
+															{{ casino.pay_nl.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'au' %}
+														{% if casino.pay_au.all %}
+															{{ casino.pay_au.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'ca' %}
+														{% if casino.pay_ca.all %}
+															{{ casino.pay_ca.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'us' %}
+														{% if casino.pay_us.all %}
+															{{ casino.pay_us.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'gb' %}
+														{% if casino.pay_gb.all %}
+															{{ casino.pay_gb.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'br' %}
+														{% if casino.pay_br.all %}
+															{{ casino.pay_br.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'fi' %}
+														{% if casino.pay_fi.all %}
+															{{ casino.pay_fi.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'nz' %}
+														{% if casino.pay_nz.all %}
+															{{ casino.pay_nz.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'no' %}
+														{% if casino.pay_no.all %}
+															{{ casino.pay_no.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'da' %}
+														{% if casino.pay_da.all %}
+															{{ casino.pay_da.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'es' %}
+														{% if casino.pay_es.all %}
+															{{ casino.pay_es.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'at' %}
+														{% if casino.pay_at.all %}
+															{{ casino.pay_at.all|length }}	
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'be' %}
+														{% if casino.pay_be.all %}
+															{{ casino.pay_be.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'bg' %}
+														{% if casino.pay_bg.all %}
+															{{ casino.pay_bg.all|length }}	
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'ch' %}
+														{% if casino.pay_ch.all %}
+															{{ casino.pay_ch.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'fr' %}
+														{% if casino.pay_fr.all %}
+															{{ casino.pay_fr.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'id' %}
+														{% if casino.pay_id.all %}
+															{{ casino.pay_id.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'ie' %}
+														{% if casino.pay_ie.all %}
+															{{ casino.pay_ie.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'in' %}
+														{% if casino.pay_in.all %}
+															{{ casino.pay_in.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'jp' %}
+														{% if casino.pay_jp.all %}
+															{{ casino.pay_jp.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'my' %}
+														{% if casino.pay_my.all %}
+															{{ casino.pay_my.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'ph' %}
+														{% if casino.pay_ph.all %}
+															{{ casino.pay_ph.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'sg' %}
+														{% if casino.pay_sg.all %}
+															{{ casino.pay_sg.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'th' %}
+														{% if casino.pay_th.all %}
+															{{ casino.pay_th.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'tr' %}
+														{% if casino.pay_tr.all %}
+															{{ casino.pay_tr.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% elif LANGUAGE_CODE == 'za' %}
+														{% if casino.pay_za.all %}
+															{{ casino.pay_za.all|length }}
+														{% else %}
+															{{ casino.pay_en.all|length }}
+														{% endif %}
+													{% else %}
+															{{ casino.pay_en.all|length }}
+													{% endif %}
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content tab__content">
+									<div class="tab-pane show active" id="tab-content-details">
+										<div class="main-desc content-box-shadow">
+											<h1 class="main-desc__header"><span class="main-desc__name">{{ casino.name }} </span><span class="green-text">{% trans 'Review' %}</span></h1>
+											{% if casino.details_text_visible or casino.details_text_hidden %}
+												<div class="main-desc__textbox">
+													<p class="main-desc__text visible-text">
+														{{ casino.details_text_visible }}
+													</p>
+													<div class="unvisible-text">
+														{{ casino.details_text_hidden|safe }}
+													</div>
+												</div>
+												{% if casino.details_text_hidden %}
+													<div class="main-desc__read-more read-more green-text"><img class="main-desc__read-more-img" src="/media/images/read-more-arrow.png"><span class="main-desc__read-more-text">{% trans 'Read more' %}</span><span class="main-desc__read-less-text display-none">{% trans 'Read less' %}</span></div>
+												{% endif %}
+											{% endif %}	
+										</div>
+										<div class="row mt-3">
+											<div class="col-12 col-lg-6">
+												<div class="details-bonuses">
+													<h2 class="grey-header">
+														<svg>
+															<use xlink:href="/media/images/sprites.svg#bonuses"></use>
+														</svg><span>{% trans 'Bonuses' %}</span>
+													</h2>
+													<div class="details-bonuses__item content-box">
+														<div class="svg-text-box">
+															<svg>
+																<use xlink:href="/media/images/sprites.svg#bonuses"></use>
+															</svg>
+															<div class="details-bonuses__textbox">
+																<div class="grey-string">{% trans 'No Deposit Bonus' %}</div>
+																<div class="white-string">
+																	{% if bonus_no_deposit.0 %}
+																		{{bonus_no_deposit.0.name}}
+																	{% else %}
+																		{% trans 'No bonus' %}
+																	{% endif %}
+																</div>
+															</div>
+														</div><a class="details-bonuses__link" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">
+															<svg>
+																<use xlink:href="/media/images/sprites.svg#arrow-right"></use>
+															</svg></a>
+													</div>
+													<div class="details-bonuses__item content-box">
+														<div class="svg-text-box">
+															<svg>
+																<use xlink:href="/media/images/sprites.svg#bonuses"></use>
+															</svg>
+															<div class="details-bonuses__textbox">
+																<div class="grey-string">{% trans 'Deposit Bonus' %}</div>
+																<div class="white-string">
+																	{% if bonus_deposit.0 %}
+																		{{bonus_deposit.0.name}}
+																	{% else %}
+																		{% trans 'No bonus' %}
+																	{% endif %}
+																</div>
+															</div>
+														</div><a class="details-bonuses__link" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">
+															<svg>
+																<use xlink:href="/media/images/sprites.svg#arrow-right"></use>
+															</svg></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 mt-2 mt-sm-0">
+												<h2 class="grey-header">
+													<svg>
+														<use xlink:href="/media/images/sprites.svg#details-games-header"></use>
+													</svg><span>{% trans 'Games' %}</span>
+												</h2>
+												<div class="details-games">
+													<div class="show-hide-gamebox content-box">
+														{% for active in casino.games.all %}
+															<div class="games-box games-box-active">
+																<svg>
+																	<use xlink:href="/media/images/sprites.svg#{{active.svg_name}}"></use>
+																</svg><span>{{active.name}}</span>
+															</div>
+														{% endfor %}
+													</div>
+													<div class="details-games__read-more read-more"><img class="details-games__read-more-img" src="/media/images/read-more-arrow.png">
+														<svg class="details-games__read-more-img-hand">
+															<use xlink:href="/media/images/sprites.svg#press-button"></use>
+														</svg><span class="details-games__read-more-text">Show more</span><span class="details-games__read-less-text display-none">Show  less</span>
+														<div class="details-games__prefix prefix-orange">
+															{{ casino.games.all|length }}
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-3">
+											<div class="col-12 col-sm-6">
+												<div class="language">
+													<h2 class="grey-header">
+														<svg>
+															<use xlink:href="/media/images/sprites.svg#language"></use>
+														</svg><span>Language options</span>
+													</h2>
+													<div class="language__content-box content-box">
+														<div class="language__str">
+															<div class="language__logo-text">
+																<img src="/media/images/countries/{{ LANGUAGE_CODE }}.svg">
+																<span class="language__name">
+																	{{ country }} 
+																</span>
+																<span class="language__text">
+																	Website
+																</span>
+															</div>
+															<div class="language__all language__all-1">
+																<span class="language__all-text">
+																	All languages
+																</span>
+																<span class="show__all-btn">
+																	<span></span><span></span><span></span></span>
+																<div class="language__prefix prefix-orange">{{ casino.languages_website.all|length }}</div>
+																<div class="lang-hover content-box lang-hover-1 display-none">
+																	<div class="lang-hover__head">All website languages</div>
+																	<div class="lang-hover__flexbox">
+																		{% for lang in casino.languages_website.all %}
+																			<div class="lang-hover__item">
+																				<img src="/media/images/countries/{{ lang.slug }}.svg">
+																				<span class="lang-hover__name">
+																					{{ lang.name }} 
+																				</span>
+																			</div>
+																		{% endfor %}
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="language__str">
+															<div class="language__logo-text">
+																<img src="/media/images/countries/{{ LANGUAGE_CODE }}.svg">
+																<span class="language__name">
+																	{{ country }} 
+																</span>
+																<span class="language__text">Customer Support</span>
+															</div>
+															<div class="language__all language__all-2">
+																<span class="language__all-text">All languages</span>
+																<span class="show__all-btn"><span></span><span></span><span></span></span>
+																<div class="language__prefix prefix-orange">{{ casino.languages_support.all|length }}</div>
+																<div class="lang-hover content-box lang-hover-2 display-none">
+																	<div class="lang-hover__head">All Customer Support languages</div>
+																	<div class="lang-hover__flexbox">
+																		{% for lang in casino.languages_support.all %}
+																			<div class="lang-hover__item">
+																				<img src="/media/images/countries/{{ lang.slug }}.svg">
+																				<span class="lang-hover__name">
+																					{{ lang.name }} 
+																				</span>
+																			</div>
+																		{% endfor %}
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="language__str">
+															<div class="language__logo-text">
+																<img src="/media/images/countries/{{ LANGUAGE_CODE }}.svg">
+																<span class="language__name">
+																	{{ country }} 
+																</span>
+																<span class="language__text">Live Chat</span></div>
+															<div class="language__all language__all-3"><span class="language__all-text">All languages</span><span class="show__all-btn"><span></span><span></span><span></span></span>
+																<div class="language__prefix prefix-orange">{{ casino.languages_chat.all|length }}</div>
+																<div class="lang-hover content-box lang-hover-3 display-none">
+																	<div class="lang-hover__head">All livechat languages</div>
+																	<div class="lang-hover__flexbox">
+																		{% for lang in casino.languages_chat.all %}
+																			<div class="lang-hover__item">
+																				<img src="/media/images/countries/{{ lang.slug }}.svg">
+																				<span class="lang-hover__name">
+																					{{ lang.name }} 
+																				</span>
+																			</div>
+																		{% endfor %}
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6 mt-2 mt-sm-0">
+												<div class="providers">
+													<h2 class="grey-header">
+														<svg>
+															<use xlink:href="/media/images/sprites.svg#providers"></use>
+														</svg><span>Games providers</span>
+													</h2>
+													<div class="providers__content-box content-box">
+														<div class="providers__flexbox">
+															{% for soft in casino.providers.all %}
+																<img src="{{ soft.logo.url }}" title="{{ soft.name }}" alt="{{ soft.name }}">
+															{% endfor %}
+														</div>
+														<div class="providers__show-more"><span class="providers__show-more-text">Show more</span><span class="show__all-btn"><span></span><span></span><span></span></span>
+															<div class="providers__prefix prefix-orange">{{ casino.providers.all|length }}</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="appraisal">
+											<div class="appraisal__owlbox owlbox">
+												<div class="owl-carousel owl-theme" id="appraisal-slider">
+													<div class="appraisal__item">
+														<h3 class="appraisal__header appraisal__header-positive">Positives</h3>
+														<ul class="appraisal__list appraisal__list-positive">
+															{% for appr in casino.appraisal.all %}
+																{% if appr.grad_appraisal == 'pos' %}
+																	<li>{{ appr.text_appraisal }}</li>
+																{% endif %}
+															{% endfor %}
+														</ul>
+													</div>
+													<div class="appraisal__item">
+														<h3 class="appraisal__header appraisal__header-negative">Negatives</h3>
+														<ul class="appraisal__list appraisal__list-negative">
+															{% for appr in casino.appraisal.all %}
+																{% if appr.grad_appraisal == 'neg' %}
+																	<li>{{ appr.text_appraisal }}</li>
+																{% endif %}
+															{% endfor %}
+															<!-- <li>Lots of restricted countries</li> -->
+														</ul>
+													</div>
+													<div class="appraisal__item">
+														<h3 class="appraisal__header appraisal__header-interest">Interesting Facts</h3>
+														<ul class="appraisal__list appraisal__list-interest">
+															{% for appr in casino.appraisal.all %}
+																{% if appr.grad_appraisal == 'int' %}
+																	<li>{{ appr.text_appraisal }}</li>
+																{% endif %}
+															{% endfor %}
+															<!-- <li>Big casino popular in Germany</li> -->
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-btnbox visit-btnsbox"><a class="visit__btn visit__btn-orange"href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Visit Casino</a><a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Browse recommended casinos</a></div>
+									</div>
+									<div class="tab-pane" id="tab-content-bonuses">
+										<div class="bonuses-desc content-box-shadow">
+											<h2 class="bonuses-desc__header"><span class="bonuses-desc__name">{{ casino.name }} </span><span class="green-text">{% trans 'Bonuses' %}</span></h2>
+											{% if casino.bonuses_text %}
+												<p class="bonuses-desc__text">
+													{{ casino.bonuses_text }}
+												</p>
+											{% endif %}
+										</div>
+										{% if bonus_no_deposit %}
+											<div class="bonuse">
+												<h2 class="grey-header">
+													<svg>
+														<use xlink:href="/media/images/sprites.svg#no-deposit"></use>
+													</svg><span>No Deposit Bonuses</span>
+												</h2>
+												<div class="bonus_box">
+													{% for bon in bonus_no_deposit %}
+														<div class="bonuse__contentbox">
+															<div class="row">
+																<div class="col-12 col-lg-7">
+																	<div class="right-border-box">
+																		<p class="bonuse__name">{{ bon.name }}</p>
+																		<ul class="bonuse__list">
+																			<li class="bonuse__item bonuse__item-present"><span class="green-text-2">{{ bon.bonus_type }}</span></li>
+																			{% if bon.min_dep or bon.max_cashout %}
+																				<li class="bonuse__item bonuse__item-cash">
+																					{% if bon.min_dep %}
+																						<div class="bonuse-cash">
+																							<span class="bonuse__itemtext">Min. deposit: </span>
+																							<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.min_dep }} </span>
+																						</div>
+																					{% endif %}
+																					{% if bon.max_cashout %}
+																						<div class="bonuse-cash">
+																							<span class="bonuse__itemtext">Max. cashout:</span>
+																							<span class="bonuse__value green-text-2">
+																								{% if bon.max_cashout == 0 %}
+																									{% trans 'Unlimited' %}
+																								{% else %}
+																									{{ country.currency }}{{ bon.max_cashout }}
+																								{% endif %}
+																							</span>
+																						</div>
+																					{% endif %}
+																				</li>
+																			{% endif %}
+
+																			{% if bon.wagering %}
+																				<li class="bonuse__item bonuse__item-change"><span class="bonuse__itemtext">Wagering requirements:</span><span class="bonuse__value green-text-2">{{ bon.wagering }}x</span></li>
+																			{% endif %}
+																			{% if bon.max_bet %}
+																				<li class="bonuse__item bonuse__item-coins">
+																					<span class="bonuse__itemtext">Maximum bet:</span>
+																					<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.max_bet }}</span>
+																				</li>
+																			{% endif %}
+
+																			<li class="bonuse__item bonuse__item-time"><span class="bonuse__itemtext">You should get this bonus relatively:</span><span class="bonuse__value green-text-2">{{ bon.get_bonus }}</span></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="col-12 col-lg-5 d-lg-flex align-items-center">
+																	<div class="bonuse__btnbox">
+																		<p class="bonuse__btntext">Activate bonus in your account</p><a class="visit__btn visit__btn-green" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Get Bonus</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													{% endfor %}
+												</div>
+											</div>
+										{% endif %}
+										{% if bonus_deposit %}
+											<div class="bonuse">
+												<h2 class="grey-header">
+													<svg>
+														<use xlink:href="/media/images/sprites.svg#deposit"></use>
+													</svg><span>Deposit Bonuses</span>
+												</h2>
+												<div class="bonus_box">
+													{% for bon in bonus_deposit %}
+														<div class="bonuse__contentbox">
+															<div class="row">
+																<div class="col-12 col-lg-7">
+																	<div class="right-border-box">
+																		<p class="bonuse__name">{{ bon.name }}</p>
+																		<ul class="bonuse__list">
+																			<li class="bonuse__item bonuse__item-present"><span class="green-text-2">{{ bon.bonus_type }}</span></li>
+																			{% if bon.min_dep or bon.max_cashout %}
+																				<li class="bonuse__item bonuse__item-cash">
+																					{% if bon.min_dep %}
+																						<div class="bonuse-cash">
+																							<span class="bonuse__itemtext">Min. deposit: </span>
+																							<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.min_dep }} </span>
+																						</div>
+																					{% endif %}
+																					{% if bon.max_cashout %}
+																						<div class="bonuse-cash">
+																							<span class="bonuse__itemtext">Max. cashout:</span>
+																							<span class="bonuse__value green-text-2">
+																								{% if bon.max_cashout == 0 %}
+																									{% trans 'Unlimited' %}
+																								{% else %}
+																									{{ country.currency }}{{ bon.max_cashout }}
+																								{% endif %}
+																							</span>
+																						</div>
+																					{% endif %}
+																				</li>
+																			{% endif %}
+
+																			{% if bon.wagering %}
+																				<li class="bonuse__item bonuse__item-change"><span class="bonuse__itemtext">Wagering requirements:</span><span class="bonuse__value green-text-2">{{ bon.wagering }}x</span></li>
+																			{% endif %}
+																			{% if bon.max_bet %}
+																				<li class="bonuse__item bonuse__item-coins">
+																					<span class="bonuse__itemtext">Maximum bet:</span>
+																					<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.max_bet }}</span>
+																				</li>
+																			{% endif %}
+
+																			<li class="bonuse__item bonuse__item-time"><span class="bonuse__itemtext">You should get this bonus relatively:</span><span class="bonuse__value green-text-2">{{ bon.get_bonus }}</span></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="col-12 col-lg-5 d-lg-flex align-items-center">
+																	<div class="bonuse__btnbox">
+																		<p class="bonuse__btntext">Activate bonus in your account</p><a class="visit__btn visit__btn-green" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Get Bonus</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													{% endfor %}
+													<div class="bonuse__contentbox">
+														<div class="row">
+															<div class="col-12 col-lg-7">
+																<div class="right-border-box">
+																	<p class="bonuse__name">100% UP TO €100</p>
+																	<ul class="bonuse__list">
+																		<li class="bonuse__item bonuse__item-present"><span class="green-text-2">1st Deposit Bonus</span></li>
+																		<li class="bonuse__item bonuse__item-cash">
+																			<div class="bonuse-cash">
+																				<span class="bonuse__itemtext">Min. deposit: </span>
+																				<span class="bonuse__value green-text-2">€10 </span>
+																			</div>
+																			<div class="bonuse-cash">
+																				<span class="bonuse__itemtext">Max. cashout:</span>
+																				<span class="bonuse__value green-text-2">Unlimited</span>
+																			</div>
+																		</li>
+																		<li class="bonuse__item bonuse__item-change"><span class="bonuse__itemtext">Wagering requirements:</span><span class="bonuse__value green-text-2">25x bonus</span></li>
+																		<li class="bonuse__item bonuse__item-coins"><span class="bonuse__itemtext">Maximum bet:</span><span class="bonuse__value green-text-2">€5</span></li>
+																		<li class="bonuse__item bonuse__item-time"><span class="bonuse__itemtext">You should get this bonus relatively:</span><span class="bonuse__value green-text-2">FAST</span></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="col-12 col-lg-5 d-lg-flex align-items-center">
+																<div class="bonuse__btnbox bonuse__btnbox-bottom">
+																	<p class="bonuse__btntext">Activate bonus in your account</p><a class="visit__btn visit__btn-green" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Get Bonus	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										{% endif %}
+									</div>
+									<div class="tab-pane" id="tab-content-rep">
+										<div class="reputation-desc content-box-shadow">
+											<h2 class="reputation-desc__header"><span class="green-text">Reputation rating of </span><span class="reputation-desc__name">{{ casino.name }} explained</span></h2>
+											{% if casino.reputation_text %}
+												<p class="reputation-desc__text">
+													{{ casino.reputation_text }}												
+												</p>
+											{% endif %}
+										</div>
+										<div class="rep">
+											<div class="rep__appraisal">
+												<div class="rep__appraisal-imgbox"><img src="/media/images/top-rep-icon.svg"></div>
+												<div class="rep__appraisal-text">Perfect Reputation</div>
+											</div>
+											<div class="rep__item">
+												<div class="rep__box">
+													<div class="rep__text">	Casino revenues <br>	(last 4 years)<span class="rep__btn-info rep__btn-info-0">i</span>
+														<div class="rep__hover rep__hover-0 display-none">Bigger casinos are generally safer for players, because their high revenues allow them to pay out even very big wins without any issues and their quality has been proven by a large number of players. We take into account estimated revenues over the last 4 years. </div>
+													</div>
+													<div class="rep__diagram">
+														<div class="rep__figurebox"><span class="rep__figure wow">{{casino.revenues_score}}</span><span>%</span></div>
+														<div class="border-gradient border-gradient-1">
+															<style>
+																.border-gradient-1{
+																	background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{ casino.revenues_score }}%, #E8290F 0%);
+																}
+															</style>
+														</div>
+													</div>
+												</div>
+												<div class="rep__value"> 
+													<span>
+														{% if casino.revenues_score >= 90 %}
+															{% trans 'Very big' %}
+														{% elif casino.revenues_score >= 70 %}
+															{% trans 'Big' %}
+														{% elif casino.revenues_score >= 50 %}
+															{% trans 'Avarage' %}
+														{% elif casino.revenues_score >= 30 %}
+															{% trans 'Small' %}
+														{% elif casino.revenues_score >= 10 %}
+															{% trans 'Very small' %}
+														{% elif casino.revenues_score < 10 %}
+															{% trans 'Almost not' %}
+														{% endif %}
+													</span>
+												</div>
+											</div>
+											<div class="rep__item">
+												<div class="rep__box">
+													<div class="rep__text">Terms and conditions<span class="rep__btn-info rep__btn-info-1">i</span>
+														<div class="rep__hover rep__hover-1 display-none">We go over the terms and condition of each casino and look for unfair rules that could potentially be used against players. Any clauses we consider to be unfair result in a lower reputation rating for the casino.</div>
+													</div>
+													<div class="rep__diagram">
+														<div class="rep__figurebox"><span class="rep__figure wow">{{casino.terms_score}}</span><span>%</span></div>
+														<div class="border-gradient border-gradient-2">
+															<style>
+																.border-gradient-2{
+																	background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{casino.terms_score}}%, #E8290F 0%); 
+																}
+															</style>
+														</div>
+													</div>
+												</div>
+												<div class="rep__value"> 
+													<span>
+														{% if casino.terms_score >= 90 %}
+															{% trans 'Fair' %}
+														{% elif casino.terms_score >= 70 %}
+															{% trans 'Mostly fair' %}
+														{% elif casino.terms_score >= 50 %}
+															{% trans 'Avarage' %}
+														{% elif casino.terms_score >= 30 %}
+															{% trans 'Not very fair' %}
+														{% elif casino.terms_score >= 10 %}
+															{% trans 'Unfair' %}
+														{% elif casino.terms_score < 10 %}
+															{% trans 'Very unfair' %}
+														{% endif %}
+													</span>
+												</div>
+											</div>
+											<div class="rep__item">
+												<div class="rep__box">
+													<div class="rep__text">Blacklists<span class="rep__btn-info rep__btn-info-2">i</span>
+														<div class="rep__hover rep__hover-2 display-none">If a casino appears on reputable blacklists, it is usually a sign that it has some negative qualities. We consider each blacklist and decrease the casino’s rating based on its seriousness and our view of the situation.</div>
+													</div>
+													<div class="rep__diagram">
+														<div class="rep__figurebox"><span class="rep__figure wow">{{casino.blacklist_score}}</span><span>%</span></div>
+														<div class="border-gradient border-gradient-3">
+															<style>
+																.border-gradient-3{
+																	background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{casino.blacklist_score}}%, #E8290F 0%);
+																}
+																
+															</style>
+														</div>
+													</div>
+												</div>
+												<div class="rep__value"> 
+													<span>
+														{% if casino.blacklist_score >= 90 %}
+															{% trans 'None' %}
+														{% elif casino.blacklist_score >= 70 %}
+															{% trans 'Mostly none' %}
+														{% elif casino.blacklist_score >= 50 %}
+															{% trans 'Not serious lists' %}
+														{% elif casino.blacklist_score >= 30 %}
+															{% trans 'In Blacklist' %}
+														{% endif %}
+													</span>
+												</div>
+											</div>
+											<div class="rep__item">
+												<div class="rep__box">
+													<div class="rep__text">Size to complaints ratio<span class="rep__btn-info rep__btn-info-3">i</span>
+														<div class="rep__hover rep__hover-3 display-none">Player complaints signify that the casino does not treat players right or deal with certain situations correctly. We consider the number and seriousness of complaints in relation to the casino’s size, as it can be expected that sites with more players will also have more complaints. Complaints about related casinos are also taken into account.</div>
+													</div>
+													<div class="rep__diagram">
+														<div class="rep__figurebox"><span class="rep__figure wow">{{ casino.complaints_score }}</span><span>%</span></div>
+														<div class="border-gradient border-gradient-4">
+															<style>
+																.border-gradient-4{
+																	background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{ casino.complaints_score }}%, #E8290F 0%);
+																}
+															</style>
+														</div>
+													</div>
+												</div>
+												<div class="rep__value">
+													<span>
+												 		{% if casino.complaints_score >= 90 %}
+															{% trans 'Very good' %}
+														{% elif casino.complaints_score >= 70 %}
+															{% trans 'Good' %}
+														{% elif casino.complaints_score >= 50 %}
+															{% trans 'Avarage' %}
+														{% elif casino.complaints_score >= 30 %}
+															{% trans 'Not good' %}
+														{% elif casino.complaints_score >= 10 %}
+															{% trans 'Negative' %}
+														{% elif casino.complaints_score < 10 %}
+															{% trans 'Very negative' %}
+														{% endif %}
+													</span>
+												</div>
+											</div>
+											<div class="rep__item">
+												<div class="rep__box">
+													<div class="rep__text">Other factors<span class="rep__btn-info rep__btn-info-4">i</span>
+														<div class="rep__hover rep__hover-4 display-none">On top of the previous four factors, there can also be other miscellaneous characteristics of the casino that influence its reputation rating.</div>
+													</div>
+													<div class="rep__diagram">
+														<div class="rep__figurebox"><span class="rep__figure wow">{{ casino.other_score }}</span><span>%</span></div>
+														<div class="border-gradient border-gradient-5">
+															<style>
+																.border-gradient-5{
+																	background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{ casino.other_score }}%, #E8290F 0%);
+																} 
+															</style>
+														</div>
+													</div>
+												</div>
+												<div class="rep__value">
+													<span>
+														{% if casino.other_score >= 90 %}
+															{% trans 'Very positive' %}
+														{% elif casino.other_score >= 70 %}
+															{% trans 'Mostly positive' %}
+														{% elif casino.other_score >= 50 %}
+															{% trans 'Neutral' %}
+														{% elif casino.other_score >= 30 %}
+															{% trans 'Not positive' %}
+														{% elif casino.other_score >= 10 %}
+															{% trans 'Negative' %}
+														{% elif casino.other_score < 10 %}
+															{% trans 'Very negative' %}
+														{% endif %}
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="rep-btnbox visit-btnsbox"><a class="visit__btn visit__btn-orange" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Visit Casino</a><a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Browse recommended casinos</a></div>
+									</div>
+									<div class="tab-pane" id="tab-content-pay">
+										<div class="pay-desc content-box-shadow">
+											<h2 class="pay-desc__header"><span class="pay-desc__name">{{ casino.name }} </span><span class="green-text">payment methods</span></h2>
+											{% if casino.pay_text %}
+												<p class="pay-desc__text">{{ casino.pay_text }}</p>
+											{% endif %}
+										</div>
+										<div class="pay">
+											<table>
+												<thead>
+													<tr>
+														<th>Payment Method </th>
+														<th>	Deposit<br>Limits &amp; fees</th>
+														<th>	Withdrawal<br>	Limits &amp; fees </th>
+														<th> Withdrawal Time </th>
+													</tr>
+												</thead>
+												<tbody>
+													{% for pay in casino.pay_ca.all %}
+														<tr> 
+															<td class="pay__td-first">
+																<div class="pay__methodbox">
+																	<div class="pay__logo"><img src="{{ pay.logo.url }}"></div>
+																	<div class="pay__name">{{ pay.name }}</div>
+																</div>
+															</td>
+															<td class="pay__td">
+																<div class="responsive-before">
+																	 	Deposit<br>Limits &amp; fees</div>
+																<div class="pay__value">
+																	{% if pay.deposit_limit_min or pay.deposit_limit_max %}
+																		{{ country.currency }}{{ pay.deposit_limit_min }} - {{ country.currency }}{{pay.deposit_limit_max}}
+																	{% else %}
+																		{% trans 'Not Available' %}
+																	{% endif %}
+																</div>
+															</td>
+															<td class="pay__td">
+																<div class="responsive-before">	Withdrawal<br>	Limits &amp; fees</div>
+																<div class="pay__value">
+																	{% if pay.withdrawal_limit_min or pay.withdrawal_limit_max %}
+																		{{ country.currency }}{{ pay.withdrawal_limit_min }} - {{ country.currency }}{{pay.withdrawal_limit_max}}
+																	{% else %}
+																		{% trans 'Not Available' %}
+																	{% endif %}
+																</div>
+															</td>
+															<td class="pay__td">
+																<div class="responsive-before">Withdrawal Time</div>
+																<div class="pay__value">
+																	{% if pay.withdrawal_time_min or pay.withdrawal_time_max %}
+																		{{ pay.withdrawal_time_min }} - {{ pay.withdrawal_time_max }} {% trans 'days' %}
+																	{% else %}
+																		-
+																	{% endif %}
+																</div>
+															</td>
+														</tr>
+													{% endfor %}
+												</tbody>
+											</table>
+										</div>
+										<div class="pay-btnbox visit-btnsbox"><a class="visit__btn visit__btn-orange" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Visit Casino</a><a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Browse recommended casinos</a></div>
+										<div class="pay-btnbox-green"><a class="visit__btn visit__btn-green" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');">Get Bonus</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+		{% endblock %}
+					

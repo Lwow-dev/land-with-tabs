@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-09 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: casinos/templates/base.html:100 casinos/templates/review.html:749
+msgid "Casino"
+msgstr "Kasino"
+
+#: casinos/templates/base.html:100
+msgid "Review"
+msgstr "Ulasan"
+
+#: casinos/templates/base.html:112
+msgid "Your Promo Code"
+msgstr "Kode Promo Anda"
+
+#: casinos/templates/base.html:112 casinos/templates/review.html:27
+msgid "First deposit bonus"
+msgstr "Bonus setoran pertama"
+
+#: casinos/templates/base.html:113 casinos/templates/review.html:28
+#: casinos/templates/review.html:157 casinos/templates/review.html:174
+msgid "€"
+msgstr "$"
+
+#: casinos/templates/base.html:129
+msgid "Expert Review (c) All rights reserved"
+msgstr "Ulasan ahli (c) hak cipta dilindungi"
+
+#: casinos/templates/review.html:5
+msgid "Landing 22 bet"
+msgstr "Memasang 22 taruhan"
+
+#: casinos/templates/review.html:15
+msgid "Show more"
+msgstr "Tunjukkan lebih banyak"
+
+#: casinos/templates/review.html:16
+msgid "Show less"
+msgstr "Tunjukkan lebih sedikit"
+
+#: casinos/templates/review.html:29
+msgid "Claim Bonus"
+msgstr "Klaim Bonus"
+
+#: casinos/templates/review.html:36
+msgid "Quality"
+msgstr "Kualitas"
+
+#: casinos/templates/review.html:66
+msgid "Bonuses"
+msgstr "Bonus"
+
+#: casinos/templates/review.html:90
+msgid "Payouts"
+msgstr "Pembayaran"
+
+#: casinos/templates/review.html:117
+msgid "Games"
+msgstr "Permainan"
+
+#: casinos/templates/review.html:147
+msgid "License"
+msgstr "Lisensi"
+
+#: casinos/templates/review.html:156
+msgid "Min deposit"
+msgstr "Setoran minimum"
+
+#: casinos/templates/review.html:169
+msgid "WELCOME BONUS"
+msgstr "BONUS SELAMAT DATANG"
+
+#: casinos/templates/review.html:173
+msgid "Up To"
+msgstr "Hingga"
+
+#: casinos/templates/review.html:177
+msgid "FREE SPINS"
+msgstr "SPIN GRATIS"
+
+#: casinos/templates/review.html:186
+msgid "Payment methods"
+msgstr "Metode pembayaran"
+
+#: casinos/templates/review.html:187 casinos/templates/review.html:787
+msgid "The"
+msgstr ""
+
+#: casinos/templates/review.html:187
+msgid ""
+"casino has a variety of payment methods that ensure a fast and error-free "
+"withdrawal process"
+msgstr "Kasino memiliki sejumlah metode pembayaran yang memastikan proses penarikan cepat dan tanpa kesalahan"
+
+#: casinos/templates/review.html:189
+msgid ""
+"All of the following payment methods can be used both for replenishment and "
+"withdrawal of funds.Transfers cannot be canceled. Once payments or deposits "
+"have been made, they cannot be changed by either an individual or a casino"
+msgstr ""
+"Semua metode pembayaran berikut dapat digunakan baik untuk pengisian dan penarikan dana. Transfer tidak dapat dibatalkan. Setelah pembayaran atau setoran dilakukan, maka kasino atau individu siapa pun tidak dapat mengubahnya."
+
+#: casinos/templates/review.html:685
+msgid "Registration"
+msgstr "Registrasi"
+
+#: casinos/templates/review.html:692
+msgid "Advantages"
+msgstr "Keuntungan"
+
+#: casinos/templates/review.html:695 casinos/templates/review.html:710
+msgid "Players get big bonuses every weekend!"
+msgstr "Pemain mendapatkan bonus besar setiap akhir minggu!"
+
+#: casinos/templates/review.html:698 casinos/templates/review.html:713
+msgid "Promotions and bonus program for VIP players!"
+msgstr "Promosi dan bonus untuk pemain VIP!"
+
+#: casinos/templates/review.html:701 casinos/templates/review.html:716
+msgid "The biggest jackpots and easy withdrawals!"
+msgstr "Jackpot terbesar dan penarikan mudah!"
+
+#: casinos/templates/review.html:704 casinos/templates/review.html:719
+msgid "Games with live dealers!"
+msgstr "Permainan langsung dengan dealer!"
+
+#: casinos/templates/review.html:723 casinos/templates/review.html:772
+#: casinos/templates/review.html:807 casinos/templates/review.html:836
+#: casinos/templates/review.html:861
+msgid "Play now"
+msgstr "Mainkan sekarang"
+
+#: casinos/templates/review.html:747
+msgid "Software Providers"
+msgstr "Perangkat Lunak"
+
+#: casinos/templates/review.html:749
+msgid ""
+"online partners with a huge list of software providers. We employ such "
+"companies as Yggdrasil, NetEnt, Amatic, Microgaming, and many others"
+msgstr ""
+"berpartner secara online dengan berbagai penyedia layanan. Kami bekerja dengan perusahaan seperti Yggdrasil, NetEnt, Amatic, Microgaming, dan masih banyak lagi."
+
+#: casinos/templates/review.html:753
+msgid ""
+"This means that all the games presented on our site are of high quality, "
+"excellent design, and variety"
+msgstr ""
+"Ini berarti semua permainan di situs kami berkualitas tinggi, memiliki desain yang hebat, dan bervariasi"
+
+#: casinos/templates/review.html:760
+msgid "Ways to play"
+msgstr "Cara bermain"
+
+#: casinos/templates/review.html:763
+msgid "Directly in your browser"
+msgstr "Langsung melalui browser Anda"
+
+#: casinos/templates/review.html:766
+msgid "Mobile app. It can be used on both IOS and Android"
+msgstr "Aplikasi mobile. Dapat digunakan di IOS maupun Android"
+
+#: casinos/templates/review.html:769
+msgid "Download the application to your computer"
+msgstr "Unduh aplikasinya di komputer Anda"
+
+#: casinos/templates/review.html:781
+msgid "Casino games"
+msgstr "Permainan kasino"
+
+#: casinos/templates/review.html:783
+msgid ""
+"All of our games are self-adapting to the size of your device, so there is "
+"no limit to your entertainment! They have also been translated into most of "
+"the world&apos;s languages"
+msgstr ""
+"Semua permainan kami dapat menyesuaikan diri dengan ukuran perangkat Anda, sehingga hiburan Anda tidak terbatas! Permainan kami juga sudah diterjemahkan ke dalam berbagai bahasa"
+
+#: casinos/templates/review.html:787
+msgid ""
+"website is updated almost every day, which means that you will find "
+"something new and incredibly interesting for yourself every time"
+msgstr ""
+"Situs kami diperbarui hampir setiap hari, yang berarti Anda akan menemukan sesuatu yang baru dan luar biasa menarik setiap kali mengaksesnya."
+
+#: casinos/templates/review.html:815
+msgid "Vip access"
+msgstr "Akses VIP"
+
+#: casinos/templates/review.html:819 casinos/templates/review.html:843
+msgid "Unlimited access"
+msgstr "Akses tidak terbatas"
+
+#: casinos/templates/review.html:820 casinos/templates/review.html:844
+msgid ""
+"All games, bonuses, promotions, exclusive tournaments are available to you"
+msgstr ""
+"Semua permainan, bonus, promosi, dan turnamen eksklusif tersedia untuk Anda"
+
+#: casinos/templates/review.html:825 casinos/templates/review.html:849
+msgid "Personal guide manager"
+msgstr "Manajer pemandu pribadi"
+
+#: casinos/templates/review.html:826 casinos/templates/review.html:850
+msgid "Works 24/7, answer any of your questions as soon as possible"
+msgstr "Bekerja 24/7, menjawab pertanyaan Anda secepat mungkin"
+
+#: casinos/templates/review.html:831 casinos/templates/review.html:855
+msgid "Faster payouts"
+msgstr "Pembayaran lebih cepat"
+
+#: casinos/templates/review.html:832 casinos/templates/review.html:856
+msgid "More prizes with the highest payouts. Money is withdrawn out of turn"
+msgstr "" 
+"Lebih banyak hadiah untuk pembayaran tertinggi. Uang dapat ditarik secara tiba-tiba"
+
+#: casinos/templates/review.html:871 casinos/templates/review.html:880
+msgid "User Interface"
+msgstr "Antar muka pengguna"
+
+#: casinos/templates/review.html:878
+msgid "Interface"
+msgstr "Antar muka"
+
+#: casinos/templates/review.html:878
+msgid "User"
+msgstr "Pengguna"
+
+#: casinos/templates/review.html:881
+msgid ""
+"Design and functionality! According to polls, 87&#37; of users liked the "
+"color scheme and structure of"
+msgstr ""
+"Desain dan fungsionalitas! Berdasarkan jajak pendapat, pengguna menyukai skema warna serta struktur"
+
+#: casinos/templates/review.html:881
+msgid "website and application"
+msgstr "situs dan aplikasi kami"
+
+#: casinos/templates/review.html:882
+msgid "It is easy to navigate and find exactly what you need."
+msgstr "Sangat mudah menjelajah dan menemukan apa yang Anda butuhkan."
+
+#: casinos/templates/review.html:884 casinos/templates/review.html:918
+msgid "Visit Website"
+msgstr "Kunjungi situs"
+
+#: casinos/templates/review.html:892
+msgid "Support"
+msgstr "Dukungan pengguna"
+
+#: casinos/templates/review.html:896
+msgid ""
+"Casino Online has various types of support.You can choose the option that is "
+"most convenient for you from email, phone, or our 24/7 chat"
+msgstr ""
+"Kasino online memiliki berbagai macam dukungan pengguna. Anda bisa memilih opsi yang paling nyaman bagi Anda mulai dari e-mail, telepon atau layanan percakapan 24/7"
+
+#: casinos/templates/review.html:897
+msgid ""
+"If the request is very urgent, it is better to use chat or telephone support "
+"- they work 24/7"
+msgstr ""
+"Jika mendesak, sebaiknya gunakan layanan percakapan 24/7"
+
+#: casinos/templates/review.html:898
+msgid ""
+"If the issue needs to be considered in great detail, it is better to write "
+"to us by mail"
+msgstr ""
+"Jika masalah perlu dijelaskan lebih rinci, sebaiknya kirim e-mail ke tim kami"
+
+#: casinos/templates/review.html:900
+msgid ""
+"You don&apos;t have to worry about the language barrier. Support works in a "
+"variety of languages around the world"
+msgstr ""
+"Anda tidak perlu khawatir tentang batasan bahasa. Dukungan pelanggan kami melayani berbagai bahasa dari seluruh dunia"
+
+#: casinos/templates/review.html:905
+msgid "Communication options"
+msgstr "Pilihan komunikasi"
+
+#: casinos/templates/review.html:908
+msgid "Chat"
+msgstr "Percakapan"
+
+#: casinos/templates/review.html:911
+msgid "Phone call"
+msgstr "Panggilan telepon"
+
+#: casinos/templates/review.html:914
+msgid "Mail"
+msgstr "E-mail"

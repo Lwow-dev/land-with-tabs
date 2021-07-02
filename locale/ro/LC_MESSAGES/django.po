@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-09 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: casinos/templates/base.html:100 casinos/templates/review.html:749
+msgid "Casino"
+msgstr "Cazinou"
+
+#: casinos/templates/base.html:100
+msgid "Review"
+msgstr "Revizuire"
+
+#: casinos/templates/base.html:112
+msgid "Your Promo Code"
+msgstr "Codul dvs. promoțional"
+
+#: casinos/templates/base.html:112 casinos/templates/review.html:27
+msgid "First deposit bonus"
+msgstr "Bonus la prima depunere"
+
+#: casinos/templates/base.html:113 casinos/templates/review.html:28
+#: casinos/templates/review.html:157 casinos/templates/review.html:174
+msgid "€"
+msgstr "€"
+
+#: casinos/templates/base.html:129
+msgid "Expert Review (c) All rights reserved"
+msgstr "Expert Revizuire (c) Toate drepturile rezervate"
+
+#: casinos/templates/review.html:5
+msgid "Landing 22 bet"
+msgstr "Pagina de destinație 22 bet "
+
+#: casinos/templates/review.html:15
+msgid "Show more"
+msgstr "Afișați mai multe"
+
+#: casinos/templates/review.html:16
+msgid "Show less"
+msgstr "Arată mai puțin"
+
+#: casinos/templates/review.html:29
+msgid "Claim Bonus"
+msgstr "Revendicați bonusul"
+
+#: casinos/templates/review.html:36
+msgid "Quality"
+msgstr "Calitate"
+
+#: casinos/templates/review.html:66
+msgid "Bonuses"
+msgstr "Bonusuri"
+
+#: casinos/templates/review.html:90
+msgid "Payouts"
+msgstr "Plată"
+
+#: casinos/templates/review.html:117
+msgid "Games"
+msgstr "Jocuri"
+
+#: casinos/templates/review.html:147
+msgid "License"
+msgstr "Licență"
+
+#: casinos/templates/review.html:156
+msgid "Min deposit"
+msgstr "Depozit minim"
+
+#: casinos/templates/review.html:169
+msgid "WELCOME BONUS"
+msgstr "Bonus de bun venit"
+
+#: casinos/templates/review.html:173
+msgid "Up To"
+msgstr "Pâna la"
+
+#: casinos/templates/review.html:177
+msgid "FREE SPINS"
+msgstr "TIRURI GRATUITE"
+
+#: casinos/templates/review.html:186
+msgid "Payment methods"
+msgstr "Metode de plata"
+
+#: casinos/templates/review.html:187 casinos/templates/review.html:787
+msgid "The"
+msgstr ""
+
+#: casinos/templates/review.html:187
+msgid ""
+"casino has a variety of payment methods that ensure a fast and error-free "
+"withdrawal process"
+msgstr "cazinoul are o varietate de metode de plată care asigură un proces de retragere rapid și fără erori"
+
+#: casinos/templates/review.html:189
+msgid ""
+"All of the following payment methods can be used both for replenishment and "
+"withdrawal of funds.Transfers cannot be canceled. Once payments or deposits "
+"have been made, they cannot be changed by either an individual or a casino"
+msgstr "Toate următoarele metode de plată pot fi utilizate atât pentru realimentare, cât și pentru retragerea fondurilor. Transferurile nu pot fi anulate. După efectuarea plăților sau a depunerilor, acestea nu pot fi modificate nici de o persoană fizică, nici de un cazinou"
+
+#: casinos/templates/review.html:685
+msgid "Registration"
+msgstr "Înregistrare"
+
+#: casinos/templates/review.html:692
+msgid "Advantages"
+msgstr "Avantaje"
+
+#: casinos/templates/review.html:695 casinos/templates/review.html:710
+msgid "Players get big bonuses every weekend!"
+msgstr "Jucătorii primesc bonusuri mari în fiecare weekend!"
+
+#: casinos/templates/review.html:698 casinos/templates/review.html:713
+msgid "Promotions and bonus program for VIP players!"
+msgstr "Promoții și program bonus pentru jucătorii VIP!"
+
+#: casinos/templates/review.html:701 casinos/templates/review.html:716
+msgid "The biggest jackpots and easy withdrawals!"
+msgstr "Cele mai mari jackpoturi și retrageri ușoare!"
+
+#: casinos/templates/review.html:704 casinos/templates/review.html:719
+msgid "Games with live dealers!"
+msgstr "Jocuri de dealeri live!"
+
+#: casinos/templates/review.html:723 casinos/templates/review.html:772
+#: casinos/templates/review.html:807 casinos/templates/review.html:836
+#: casinos/templates/review.html:861
+msgid "Play now"
+msgstr "Joaca acum"
+
+#: casinos/templates/review.html:747
+msgid "Software Providers"
+msgstr "Furnizorii de software"
+
+#: casinos/templates/review.html:749
+msgid ""
+"online partners with a huge list of software providers. We employ such "
+"companies as Yggdrasil, NetEnt, Amatic, Microgaming, and many others"
+msgstr "parteneri online cu o listă imensă de furnizori de software. Angajăm companii precum Yggdrasil, NetEnt, Amatic, Microgaming și multe altele"
+
+#: casinos/templates/review.html:753
+msgid ""
+"This means that all the games presented on our site are of high quality, "
+"excellent design, and variety"
+msgstr "Aceasta înseamnă că toate jocurile prezentate pe site-ul nostru sunt de înaltă calitate, design excelent și varietate"
+
+#: casinos/templates/review.html:760
+msgid "Ways to play"
+msgstr "Modalități de a juca"
+
+#: casinos/templates/review.html:763
+msgid "Directly in your browser"
+msgstr "Direct în browser"
+
+#: casinos/templates/review.html:766
+msgid "Mobile app. It can be used on both IOS and Android"
+msgstr "Aplicatie de mobil. Poate fi folosit atât pe iOS, cât și pe Android"
+
+#: casinos/templates/review.html:769
+msgid "Download the application to your computer"
+msgstr "Descărcați aplicația pe computer"
+
+#: casinos/templates/review.html:781
+msgid "Casino games"
+msgstr "Jocuri de cazino"
+
+#: casinos/templates/review.html:783
+msgid ""
+"All of our games are self-adapting to the size of your device, so there is "
+"no limit to your entertainment! They have also been translated into most of "
+"the world&apos;s languages"
+msgstr "Toate jocurile noastre se autoadaptează la dimensiunea dispozitivului dvs., deci nu există nicio limită pentru divertisment! De asemenea, au fost traduse în majoritatea limbilor lumii"
+
+#: casinos/templates/review.html:787
+msgid ""
+"website is updated almost every day, which means that you will find "
+"something new and incredibly interesting for yourself every time"
+msgstr "site-ul web este actualizat aproape în fiecare zi, ceea ce înseamnă că veți găsi ceva nou și incredibil de interesant pentru dvs. de fiecare dată"
+
+#: casinos/templates/review.html:815
+msgid "Vip access"
+msgstr "Acces VIP"
+
+#: casinos/templates/review.html:819 casinos/templates/review.html:843
+msgid "Unlimited access"
+msgstr "Acces nelimitat"
+
+#: casinos/templates/review.html:820 casinos/templates/review.html:844
+msgid ""
+"All games, bonuses, promotions, exclusive tournaments are available to you"
+msgstr "Vă sunt disponibile toate jocurile, bonusurile, promoțiile, turneele exclusive"
+
+#: casinos/templates/review.html:825 casinos/templates/review.html:849
+msgid "Personal guide manager"
+msgstr "Manager ghid personal"
+
+#: casinos/templates/review.html:826 casinos/templates/review.html:850
+msgid "Works 24/7, answer any of your questions as soon as possible"
+msgstr "Funcționează 24/7, răspundeți la orice întrebări cât mai curând posibil"
+
+#: casinos/templates/review.html:831 casinos/templates/review.html:855
+msgid "Faster payouts"
+msgstr "Plăți mai rapide"
+
+#: casinos/templates/review.html:832 casinos/templates/review.html:856
+msgid "More prizes with the highest payouts. Money is withdrawn out of turn"
+msgstr "Mai multe premii cu cele mai mari plăți. Banii sunt retrași din rândul lor"
+
+#: casinos/templates/review.html:871 casinos/templates/review.html:880
+msgid "User Interface"
+msgstr "Interfața cu utilizatorul"
+
+#: casinos/templates/review.html:878
+msgid "Interface"
+msgstr "Interfață"
+
+#: casinos/templates/review.html:878
+msgid "User"
+msgstr "Utilizator"
+
+#: casinos/templates/review.html:881
+msgid ""
+"Design and functionality! According to polls, 87&#37; of users liked the "
+"color scheme and structure of"
+msgstr "Proiectare și funcționalitate! Potrivit sondajelor, 87 & # 37; utilizatorilor le-a plăcut schema de culori și structura"
+
+#: casinos/templates/review.html:881
+msgid "website and application"
+msgstr "site-ul web și aplicația"
+
+#: casinos/templates/review.html:882
+msgid "It is easy to navigate and find exactly what you need."
+msgstr "Este ușor să navigați și să găsiți exact ceea ce aveți nevoie."
+
+#: casinos/templates/review.html:884 casinos/templates/review.html:918
+msgid "Visit Website"
+msgstr "Vizitati site-ul"
+
+#: casinos/templates/review.html:892
+msgid "Support"
+msgstr "A sustine"
+
+#: casinos/templates/review.html:896
+msgid ""
+"Casino Online has various types of support.You can choose the option that is "
+"most convenient for you from email, phone, or our 24/7 chat"
+msgstr "Casino Online are diferite tipuri de asistență. Puteți alege opțiunea care vă convine cel mai mult din e-mail, telefon sau chat-ul nostru 24/7"
+
+#: casinos/templates/review.html:897
+msgid ""
+"If the request is very urgent, it is better to use chat or telephone support "
+"- they work 24/7"
+msgstr "Dacă solicitarea este foarte urgentă, este mai bine să folosiți chat sau asistență telefonică - funcționează 24/7"
+
+#: casinos/templates/review.html:898
+msgid ""
+"If the issue needs to be considered in great detail, it is better to write "
+"to us by mail"
+msgstr "Dacă problema necesită o analiză detaliată, este mai bine să ne scrieți prin poștă"
+
+#: casinos/templates/review.html:900
+msgid ""
+"You don&apos;t have to worry about the language barrier. Support works in a "
+"variety of languages around the world"
+msgstr "Nu trebuie să vă faceți griji cu privire la bariera lingvistică. Asistența funcționează într-o varietate de limbi din întreaga lume"
+
+#: casinos/templates/review.html:905
+msgid "Communication options"
+msgstr "Opțiuni de comunicare"
+
+#: casinos/templates/review.html:908
+msgid "Chat"
+msgstr "Сonversație"
+
+#: casinos/templates/review.html:911
+msgid "Phone call"
+msgstr "Apel telefonic"
+
+#: casinos/templates/review.html:914
+msgid "Mail"
+msgstr "e-mail"

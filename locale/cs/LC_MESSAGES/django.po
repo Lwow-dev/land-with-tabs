@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-11 08:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: casinos/templates/base.html:53 casinos/templates/review.html:186
+msgid "Payment methods"
+msgstr "Platební metody"
+
+#: casinos/templates/base.html:54 casinos/templates/review.html:692
+msgid "Advantages"
+msgstr "Výhody"
+
+#: casinos/templates/base.html:55 casinos/templates/review.html:747
+msgid "Software Providers"
+msgstr "Poskytovatelé softwaru"
+
+#: casinos/templates/base.html:56 casinos/templates/review.html:760
+msgid "Ways to play"
+msgstr "Způsoby hraní"
+
+#: casinos/templates/base.html:57 casinos/templates/review.html:781
+msgid "Casino games"
+msgstr "Kasinové hry"
+
+#: casinos/templates/base.html:58 casinos/templates/review.html:815
+msgid "Vip access"
+msgstr "VIP přístup"
+
+#: casinos/templates/base.html:59 casinos/templates/review.html:871
+#: casinos/templates/review.html:880
+msgid "User Interface"
+msgstr "Uživatelské rozhraní"
+
+#: casinos/templates/base.html:60 casinos/templates/review.html:892
+msgid "Support"
+msgstr "Podpěra, podpora"
+
+#: casinos/templates/base.html:100 casinos/templates/review.html:749
+msgid "Casino"
+msgstr "Kasino"
+
+#: casinos/templates/base.html:100
+msgid "Review"
+msgstr "Přehled"
+
+#: casinos/templates/base.html:112
+msgid "Your Promo Code"
+msgstr "Váš Promo Kód"
+
+#: casinos/templates/base.html:112 casinos/templates/review.html:27
+msgid "First deposit bonus"
+msgstr "Bonus za první vklad"
+
+#: casinos/templates/base.html:113 casinos/templates/review.html:28
+#: casinos/templates/review.html:157 casinos/templates/review.html:174
+msgid "€"
+msgstr "€"
+
+#: casinos/templates/base.html:129
+msgid "Expert Review (c) All rights reserved"
+msgstr "Odborná recenze (c) Všechna práva vyhrazena"
+
+#: casinos/templates/review.html:5
+msgid "Landing 22 bet"
+msgstr "Úvodní stránka 22 bet "
+
+#: casinos/templates/review.html:15
+msgid "Show more"
+msgstr "Zobrazit více"
+
+#: casinos/templates/review.html:16
+msgid "Show less"
+msgstr "Ukaž méně"
+
+#: casinos/templates/review.html:29
+msgid "Claim Bonus"
+msgstr "Získejte bonus"
+
+#: casinos/templates/review.html:36
+msgid "Quality"
+msgstr "Kvalitní"
+
+#: casinos/templates/review.html:66
+msgid "Bonuses"
+msgstr "Bonusy"
+
+#: casinos/templates/review.html:90
+msgid "Payouts"
+msgstr "Výplaty"
+
+#: casinos/templates/review.html:117
+msgid "Games"
+msgstr "Hry"
+
+#: casinos/templates/review.html:147
+msgid "License"
+msgstr "Licence"
+
+#: casinos/templates/review.html:156
+msgid "Min deposit"
+msgstr "Minimální vklad"
+
+#: casinos/templates/review.html:169
+msgid "WELCOME BONUS"
+msgstr "WELCOME BONUS"
+
+#: casinos/templates/review.html:173
+msgid "Up To"
+msgstr "Až do"
+
+#: casinos/templates/review.html:177
+msgid "FREE SPINS"
+msgstr "ROZTOČENÍ ZDARMA"
+
+#: casinos/templates/review.html:187 casinos/templates/review.html:787
+msgid "The"
+msgstr ""
+
+#: casinos/templates/review.html:187
+msgid ""
+"casino has a variety of payment methods that ensure a fast and error-free "
+"withdrawal process"
+msgstr ""
+"Kasino má celou řadu platebních metod, které zajišťují rychlé a bezchybné "
+"platby proces výběru"
+
+#: casinos/templates/review.html:189
+msgid ""
+"All of the following payment methods can be used both for replenishment and "
+"withdrawal of funds.Transfers cannot be canceled. Once payments or deposits "
+"have been made, they cannot be changed by either an individual or a casino"
+msgstr ""
+"K doplnění a výběru prostředků lze použít všechny následující platební "
+"metody.Převody nelze zrušit. Jakmile jsou platby nebo vklady provedeny, "
+"nelze je změnit jednotlivcem ani kasinem"
+
+#: casinos/templates/review.html:685
+msgid "Registration"
+msgstr "Registrace"
+
+#: casinos/templates/review.html:695 casinos/templates/review.html:710
+msgid "Players get big bonuses every weekend!"
+msgstr "Hráči získávají každý víkend velké bonusy!"
+
+#: casinos/templates/review.html:698 casinos/templates/review.html:713
+msgid "Promotions and bonus program for VIP players!"
+msgstr "Propagace a bonusový program pro VIP hráče!"
+
+#: casinos/templates/review.html:701 casinos/templates/review.html:716
+msgid "The biggest jackpots and easy withdrawals!"
+msgstr "Největší jackpoty a snadné výběry"
+
+#: casinos/templates/review.html:704 casinos/templates/review.html:719
+msgid "Games with live dealers!"
+msgstr "Hry s živými dealery!"
+
+#: casinos/templates/review.html:723 casinos/templates/review.html:772
+#: casinos/templates/review.html:807 casinos/templates/review.html:836
+#: casinos/templates/review.html:861
+msgid "Play now"
+msgstr "hrát hned"
+
+#: casinos/templates/review.html:749
+msgid ""
+"online partners with a huge list of software providers. We employ such "
+"companies as Yggdrasil, NetEnt, Amatic, Microgaming, and many others"
+msgstr ""
+"online partneři s velkým seznamem poskytovatelů softwaru. Zaměstnáváme "
+"takové společnosti jako Yggdrasil, NetEnt, Amatic, Microgaming a mnoho "
+"dalších"
+
+#: casinos/templates/review.html:753
+msgid ""
+"This means that all the games presented on our site are of high quality, "
+"excellent design, and variety"
+msgstr ""
+"To znamená, že všechny hry prezentované na našem webu jsou vysoce kvalitní, "
+"vynikající design a rozmanitost"
+
+#: casinos/templates/review.html:763
+msgid "Directly in your browser"
+msgstr "Přímo ve vašem prohlížeči"
+
+#: casinos/templates/review.html:766
+msgid "Mobile app. It can be used on both IOS and Android"
+msgstr "Mobilní aplikace. Lze jej použít na IOS i Android"
+
+#: casinos/templates/review.html:769
+msgid "Download the application to your computer"
+msgstr "Stáhněte si aplikaci do počítače"
+
+#: casinos/templates/review.html:783
+msgid ""
+"All of our games are self-adapting to the size of your device, so there is "
+"no limit to your entertainment! They have also been translated into most of "
+"the world&apos;s languages"
+msgstr ""
+"Všechny naše hry odpovídají velikosti vašeho zařízení, takže vaše zábava "
+"není nijak omezena! Byly také přeloženy do většiny světové jazyky"
+
+#: casinos/templates/review.html:787
+msgid ""
+"website is updated almost every day, which means that you will find "
+"something new and incredibly interesting for yourself every time"
+msgstr ""
+"Web je aktualizován téměř každý den, což znamená, že pokaždé najdete něco "
+"nového a neuvěřitelně zajímavého pro sebe"
+
+#: casinos/templates/review.html:819 casinos/templates/review.html:843
+msgid "Unlimited access"
+msgstr "Neomezený přístup"
+
+#: casinos/templates/review.html:820 casinos/templates/review.html:844
+msgid ""
+"All games, bonuses, promotions, exclusive tournaments are available to you"
+msgstr ""
+"K dispozici jsou vám všechny hry, bonusy, propagační akce, exkluzivní turnaje"
+
+#: casinos/templates/review.html:825 casinos/templates/review.html:849
+msgid "Personal guide manager"
+msgstr "Manažer osobního průvodce"
+
+#: casinos/templates/review.html:826 casinos/templates/review.html:850
+msgid "Works 24/7, answer any of your questions as soon as possible"
+msgstr ""
+"Funguje 24 hodin denně, 7 dní v týdnu, co nejdříve zodpovězte jakékoli dotazy"
+
+#: casinos/templates/review.html:831 casinos/templates/review.html:855
+msgid "Faster payouts"
+msgstr "Rychlejší výplaty"
+
+#: casinos/templates/review.html:832 casinos/templates/review.html:856
+msgid "More prizes with the highest payouts. Money is withdrawn out of turn"
+msgstr "Více cen s nejvyššími výplatami. Peníze jsou vybírány mimo pořadí"
+
+#: casinos/templates/review.html:878
+msgid "Interface"
+msgstr "Rozhraní"
+
+#: casinos/templates/review.html:878
+msgid "User"
+msgstr "Uživatel"
+
+#: casinos/templates/review.html:881
+msgid ""
+"Design and functionality! According to polls, 87&#37; of users liked the "
+"color scheme and structure of"
+msgstr ""
+"Design a funkčnost! Podle průzkumů veřejného mínění uživatelům se líbilo "
+"barevné schéma a struktura"
+
+#: casinos/templates/review.html:881
+msgid "website and application"
+msgstr "webové stránky a aplikace"
+
+#: casinos/templates/review.html:882
+msgid "It is easy to navigate and find exactly what you need."
+msgstr "Je snadné se orientovat a najít přesně to, co potřebujete."
+
+#: casinos/templates/review.html:884 casinos/templates/review.html:918
+msgid "Visit Website"
+msgstr "Navštivte web"
+
+#: casinos/templates/review.html:896
+msgid ""
+"Casino Online has various types of support.You can choose the option that is "
+"most convenient for you from email, phone, or our 24/7 chat"
+msgstr ""
+"Kasino on-line má různé typy podpory.Můžete si vybrat možnost, která je pro "
+"vás nejvhodnější z e-mailu, telefonu nebo našeho chatu 24/7"
+
+#: casinos/templates/review.html:897
+msgid ""
+"If the request is very urgent, it is better to use chat or telephone support "
+"- they work 24/7"
+msgstr ""
+"Pokud je požadavek velmi naléhavý, je lepší využít chat nebo telefonickou "
+"podporu - fungují 24/7"
+
+#: casinos/templates/review.html:898
+msgid ""
+"If the issue needs to be considered in great detail, it is better to write "
+"to us by mail"
+msgstr "Pokud je třeba problém podrobně zvážit, je lepší napsat k nám poštou"
+
+#: casinos/templates/review.html:900
+msgid ""
+"You don&apos;t have to worry about the language barrier. Support works in a "
+"variety of languages around the world"
+msgstr ""
+"Nemusíte si dělat starosti s jazykovou bariérou. Podpora funguje v různé "
+"jazyky po celém světě"
+
+#: casinos/templates/review.html:905
+msgid "Communication options"
+msgstr "Možnosti komunikace"
+
+#: casinos/templates/review.html:908
+msgid "Chat"
+msgstr "Povídat si"
+
+#: casinos/templates/review.html:911
+msgid "Phone call"
+msgstr "Telefonát"
+
+#: casinos/templates/review.html:914
+msgid "Mail"
+msgstr "Pošta"
+
+#~ msgid "Up to"
+#~ msgstr "Až do"
+
+#~ msgid "Three contact options"
+#~ msgstr "Tři možnosti kontaktu"
+
+#~ msgid "24/7 customer service"
+#~ msgstr "Zákaznický servis 24/7"

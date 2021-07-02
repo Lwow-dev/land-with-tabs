@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-09 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: casinos/templates/base.html:100 casinos/templates/review.html:749
+msgid "Casino"
+msgstr "カジノ"
+
+#: casinos/templates/base.html:100
+msgid "Review"
+msgstr "レビュー"
+
+#: casinos/templates/base.html:112
+msgid "Your Promo Code"
+msgstr "あなたのプロモーションコード"
+
+#: casinos/templates/base.html:112 casinos/templates/review.html:27
+msgid "First deposit bonus"
+msgstr "初回入金ボーナス"
+
+#: casinos/templates/base.html:113 casinos/templates/review.html:28
+#: casinos/templates/review.html:157 casinos/templates/review.html:174
+msgid "€"
+msgstr "$"
+
+#: casinos/templates/base.html:129
+msgid "Expert Review (c) All rights reserved"
+msgstr "エキスパートレビュー (c) 無断転載禁止"
+
+#: casinos/templates/review.html:5
+msgid "Landing 22 bet"
+msgstr "22 betを開く"
+
+#: casinos/templates/review.html:15
+msgid "Show more"
+msgstr "もっと見る"
+
+#: casinos/templates/review.html:16
+msgid "Show less"
+msgstr "隠す"
+
+#: casinos/templates/review.html:29
+msgid "Claim Bonus"
+msgstr "ボーナスを請求"
+
+#: casinos/templates/review.html:36
+msgid "Quality"
+msgstr "クオリティ"
+
+#: casinos/templates/review.html:66
+msgid "Bonuses"
+msgstr "ボーナス"
+
+#: casinos/templates/review.html:90
+msgid "Payouts"
+msgstr "支払い"
+
+#: casinos/templates/review.html:117
+msgid "Games"
+msgstr "ゲーム"
+
+#: casinos/templates/review.html:147
+msgid "License"
+msgstr "ライセンス"
+
+#: casinos/templates/review.html:156
+msgid "Min deposit"
+msgstr "最低入金額"
+
+#: casinos/templates/review.html:169
+msgid "WELCOME BONUS"
+msgstr "ウェルカムボーナス"
+
+#: casinos/templates/review.html:173
+msgid "Up To"
+msgstr "最大"
+
+#: casinos/templates/review.html:177
+msgid "FREE SPINS" 
+msgstr "フリースピン"
+
+#: casinos/templates/review.html:186
+msgid "Payment methods"
+msgstr "支払い方法"
+
+#: casinos/templates/review.html:187 casinos/templates/review.html:787
+msgid "The"
+msgstr ""
+
+#: casinos/templates/review.html:187
+msgid ""
+"casino has a variety of payment methods that ensure a fast and error-free "
+"withdrawal process"
+msgstr "カジノでは、迅速でエラーのない出金方法があります"
+
+#: casinos/templates/review.html:189
+msgid ""
+"All of the following payment methods can be used both for replenishment and "
+"withdrawal of funds.Transfers cannot be canceled. Once payments or deposits "
+"have been made, they cannot be changed by either an individual or a casino"
+msgstr "入金・出金ともに以下のお支払い方法をご利用いただけます。お振込みのキャンセルはできません。一度支払い・入金が行われると、個人またはカジノによって変更することはできません。"
+
+#: casinos/templates/review.html:685
+msgid "Registration"
+msgstr "登録"
+
+#: casinos/templates/review.html:692
+msgid "Advantages"
+msgstr "アドバンテージ"
+
+#: casinos/templates/review.html:695 casinos/templates/review.html:710
+msgid "Players get big bonuses every weekend!"
+msgstr "プレイヤーは毎週末にビッグボーナスがもらえます!"
+
+#: casinos/templates/review.html:698 casinos/templates/review.html:713
+msgid "Promotions and bonus program for VIP players!"
+msgstr "VIPプレイヤー限定のプロモーションとボーナスプログラム!"
+
+#: casinos/templates/review.html:701 casinos/templates/review.html:716
+msgid "The biggest jackpots and easy withdrawals!"
+msgstr "最大のジャックポットと簡単な出金"
+
+#: casinos/templates/review.html:704 casinos/templates/review.html:719
+msgid "Games with live dealers!"
+msgstr "ライブディーラーゲーム"
+
+#: casinos/templates/review.html:723 casinos/templates/review.html:772
+#: casinos/templates/review.html:807 casinos/templates/review.html:836
+#: casinos/templates/review.html:861
+msgid "Play now"
+msgstr "今すぐプレイ"
+
+#: casinos/templates/review.html:747
+msgid "Software Providers"
+msgstr "ソフトウェアプロバイダー"
+
+#: casinos/templates/review.html:749
+msgid ""
+"online partners with a huge list of software providers. We employ such "
+"companies as Yggdrasil, NetEnt, Amatic, Microgaming, and many others"
+msgstr "数々ののソフトウェアプロバイダーとパートナー提携。Yggdrasil、NetEnt、Amatic、Microgaming、その他多くの企業と提携を結んでいます"
+
+#: casinos/templates/review.html:753
+msgid ""
+"This means that all the games presented on our site are of high quality, "
+"excellent design, and variety"
+msgstr "当社は、高品質で優れたデザイン、そしてバラエティーに富んだゲームを提供しています"
+
+#: casinos/templates/review.html:760
+msgid "Ways to play"
+msgstr "プレイ方法"
+
+#: casinos/templates/review.html:763
+msgid "Directly in your browser"
+msgstr "ブラウザから直接"
+
+#: casinos/templates/review.html:766
+msgid "Mobile app. It can be used on both IOS and Android"
+msgstr "モバイルアプリ。IOSとAndroidの両方で使用できます"
+
+#: casinos/templates/review.html:769
+msgid "Download the application to your computer"
+msgstr "アプリケーションをコンピューターにダウンロードする"
+
+#: casinos/templates/review.html:781
+msgid "Casino games"
+msgstr "カジノゲーム"
+
+#: casinos/templates/review.html:783
+msgid ""
+"All of our games are self-adapting to the size of your device, so there is "
+"no limit to your entertainment! They have also been translated into most of "
+"the world&apos;s languages"
+msgstr "当社のゲームはすべてのデバイスに合わせてサイズを自動調整するため、サービスに制限はありません。また、世界のほとんどの言語に翻訳されています"
+
+#: casinos/templates/review.html:787
+msgid ""
+"website is updated almost every day, which means that you will find "
+"something new and incredibly interesting for yourself every time"
+msgstr "ウェブサイトはほぼ毎日更新されているため、毎回新しいものや面白いものを見つけることができます"
+
+#: casinos/templates/review.html:815
+msgid "Vip access"
+msgstr "VIPアクセス"
+
+#: casinos/templates/review.html:819 casinos/templates/review.html:843
+msgid "Unlimited access"
+msgstr "無制限アクセス"
+
+#: casinos/templates/review.html:820 casinos/templates/review.html:844
+msgid ""
+"All games, bonuses, promotions, exclusive tournaments are available to you"
+msgstr "すべてのゲーム、ボーナス、プロモーション、限定トーナメントを利用できます"
+
+#: casinos/templates/review.html:825 casinos/templates/review.html:849
+msgid "Personal guide manager"
+msgstr "パーソナルガイドマネージャー"
+
+#: casinos/templates/review.html:826 casinos/templates/review.html:850
+msgid "Works 24/7, answer any of your questions as soon as possible"
+msgstr "24時間年中無休で質問にお答えします"
+
+#: casinos/templates/review.html:831 casinos/templates/review.html:855
+msgid "Faster payouts"
+msgstr "より迅速な支払い"
+
+#: casinos/templates/review.html:832 casinos/templates/review.html:856
+msgid "More prizes with the highest payouts. Money is withdrawn out of turn"
+msgstr "最高のペイアウトとより多くの賞品。お金は自動で引き落とされます"
+
+#: casinos/templates/review.html:871 casinos/templates/review.html:880
+msgid "User Interface"
+msgstr "ユーザーインターフェース"
+
+#: casinos/templates/review.html:878
+msgid "Interface"
+msgstr "インターフェース"
+
+#: casinos/templates/review.html:878
+msgid "User"
+msgstr "ユーザー"
+
+#: casinos/templates/review.html:881
+msgid ""
+"Design and functionality! According to polls, 87&#37; of users liked the "
+"color scheme and structure of website and application"
+msgstr ""
+"デザインと機能性! 投票によると のユーザーがウェブサイトとアプリケーションの配色と構造を好んでいます"
+
+#: casinos/templates/review.html:881
+msgid "website and application"
+msgstr "ウェブサイトとアプリケーション"
+
+#: casinos/templates/review.html:882
+msgid "It is easy to navigate and find exactly what you need."
+msgstr "ナビゲートしやすく、必要なものを確実に見つけることができます"
+
+#: casinos/templates/review.html:884 casinos/templates/review.html:918
+msgid "Visit Website"
+msgstr "ウェブサイトを見る"
+
+#: casinos/templates/review.html:892
+msgid "Support"
+msgstr "サポート"
+
+#: casinos/templates/review.html:896
+msgid ""
+"Casino Online has various types of support.You can choose the option that is "
+"most convenient for you from email, phone, or our 24/7 chat"
+msgstr "カジノオンラインには様々なタイプのサポートがあります。メール、電話、または 24時間年中無休のチャットを使って連絡することができます"
+
+#: casinos/templates/review.html:897
+msgid ""
+"If the request is very urgent, it is better to use chat or telephone support "
+"- they work 24/7"
+msgstr "お急ぎ場合は、チャットまたは電話サポートをご利用ください"
+"24時間年中無休で対応しています"
+
+#: casinos/templates/review.html:898
+msgid ""
+"If the issue needs to be considered in great detail, it is better to write "
+"to us by mail"
+msgstr "問題に関するお問い合わせはメールでご連絡ください。"
+
+#: casinos/templates/review.html:900
+msgid ""
+"You don&apos;t have to worry about the language barrier. Support works in a "
+"variety of languages around the world"
+msgstr "言語の壁を心配する必要はありません。サポートは複数の言語に対応しています"
+
+#: casinos/templates/review.html:905
+msgid "Communication options"
+msgstr "ご連絡方法"
+
+#: casinos/templates/review.html:908
+msgid "Chat"
+msgstr "チャット"
+
+#: casinos/templates/review.html:911
+msgid "Phone call"
+msgstr "電話"
+
+#: casinos/templates/review.html:914
+msgid "Mail"
+msgstr "メール"

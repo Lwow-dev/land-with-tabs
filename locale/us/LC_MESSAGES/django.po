@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-31 13:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: casinos/templates/base.html:81 casinos/templates/review.html:296
+msgid "Casino"
+msgstr ""
+
+#: casinos/templates/base.html:81
+msgid "Review"
+msgstr ""
+
+#: casinos/templates/base.html:93 casinos/templates/review.html:27
+msgid "First deposit bonus"
+msgstr ""
+
+#: casinos/templates/base.html:94 casinos/templates/review.html:28
+msgid "Up To"
+msgstr ""
+
+#: casinos/templates/base.html:110
+msgid "Expert Review (c) All rights reserved"
+msgstr ""
+
+#: casinos/templates/review.html:5
+msgid "Landing 22 bet"
+msgstr ""
+
+#: casinos/templates/review.html:15
+msgid "Show more"
+msgstr ""
+
+#: casinos/templates/review.html:16
+msgid "Show less"
+msgstr ""
+
+#: casinos/templates/review.html:35
+msgid "Quality"
+msgstr ""
+
+#: casinos/templates/review.html:46
+msgid "Bonuses"
+msgstr ""
+
+#: casinos/templates/review.html:57
+msgid "Payouts"
+msgstr ""
+
+#: casinos/templates/review.html:68
+msgid "Games"
+msgstr ""
+
+#: casinos/templates/review.html:83
+msgid "Three contact options"
+msgstr ""
+
+#: casinos/templates/review.html:84
+msgid "24/7 customer service"
+msgstr ""
+
+#: casinos/templates/review.html:97
+msgid "Payment methods"
+msgstr ""
+
+#: casinos/templates/review.html:98 casinos/templates/review.html:332
+msgid "The"
+msgstr ""
+
+#: casinos/templates/review.html:98
+msgid ""
+"casino has a variety of payment methods that ensure a fast and error-free "
+"withdrawal process"
+msgstr ""
+
+#: casinos/templates/review.html:100
+msgid ""
+"All of the following payment methods can be used both for replenishment and "
+"withdrawal of funds.Transfers cannot be canceled. Once payments or deposits "
+"have been made, they cannot be changed by either an individual or a casino"
+msgstr ""
+
+#: casinos/templates/review.html:241
+msgid "Advantages"
+msgstr ""
+
+#: casinos/templates/review.html:244 casinos/templates/review.html:259
+msgid "Players get big bonuses every weekend!"
+msgstr ""
+
+#: casinos/templates/review.html:247 casinos/templates/review.html:262
+msgid "Promotions and bonus program for VIP players!"
+msgstr ""
+
+#: casinos/templates/review.html:250 casinos/templates/review.html:265
+msgid "The biggest jackpots and easy withdrawals!"
+msgstr ""
+
+#: casinos/templates/review.html:253 casinos/templates/review.html:268
+msgid "Games with live dealers!"
+msgstr ""
+
+#: casinos/templates/review.html:271 casinos/templates/review.html:318
+#: casinos/templates/review.html:351 casinos/templates/review.html:378
+#: casinos/templates/review.html:401
+msgid "Play now"
+msgstr ""
+
+#: casinos/templates/review.html:294
+msgid "Software Providers"
+msgstr ""
+
+#: casinos/templates/review.html:296
+msgid ""
+"online partners with a huge list of software providers. We employ such "
+"companies as Yggdrasil, NetEnt, Amatic, Microgaming, and many others"
+msgstr ""
+
+#: casinos/templates/review.html:300
+msgid ""
+"This means that all the games presented on our site are of high quality, "
+"excellent design, and variety"
+msgstr ""
+
+#: casinos/templates/review.html:307
+msgid "Ways to play"
+msgstr ""
+
+#: casinos/templates/review.html:310
+msgid "Directly in your browser"
+msgstr ""
+
+#: casinos/templates/review.html:313
+msgid "Mobile app. It can be used on both IOS and Android"
+msgstr ""
+
+#: casinos/templates/review.html:316
+msgid "Download the application to your computer"
+msgstr ""
+
+#: casinos/templates/review.html:326
+msgid "Casino games"
+msgstr ""
+
+#: casinos/templates/review.html:328
+msgid ""
+"All of our games are self-adapting to the size of your device, so there is "
+"no limit to your entertainment! They have also been translated into most of "
+"the world&apos;s languages"
+msgstr ""
+
+#: casinos/templates/review.html:332
+msgid ""
+"website is updated almost every day, which means that you will find "
+"something new and incredibly interesting for yourself every time"
+msgstr ""
+
+#: casinos/templates/review.html:358
+msgid "Vip access"
+msgstr ""
+
+#: casinos/templates/review.html:362 casinos/templates/review.html:384
+msgid "Unlimited access"
+msgstr ""
+
+#: casinos/templates/review.html:363 casinos/templates/review.html:385
+msgid ""
+"All games, bonuses, promotions, exclusive tournaments are available to you"
+msgstr ""
+
+#: casinos/templates/review.html:368 casinos/templates/review.html:390
+msgid "Personal guide manager"
+msgstr ""
+
+#: casinos/templates/review.html:369 casinos/templates/review.html:391
+msgid "Works 24/7, answer any of your questions as soon as possible"
+msgstr ""
+
+#: casinos/templates/review.html:374 casinos/templates/review.html:396
+msgid "Faster payouts"
+msgstr ""
+
+#: casinos/templates/review.html:375 casinos/templates/review.html:397
+msgid "More prizes with the highest payouts. Money is withdrawn out of turn"
+msgstr ""
+
+#: casinos/templates/review.html:410 casinos/templates/review.html:419
+msgid "User Interface"
+msgstr ""
+
+#: casinos/templates/review.html:417
+msgid "Interface"
+msgstr ""
+
+#: casinos/templates/review.html:417
+msgid "User"
+msgstr ""
+
+#: casinos/templates/review.html:420
+msgid ""
+"Design and functionality! According to polls, 87&#37; of users liked the "
+"color scheme and structure of"
+msgstr ""
+
+#: casinos/templates/review.html:420
+msgid "website and application"
+msgstr ""
+
+#: casinos/templates/review.html:421
+msgid "It is easy to navigate and find exactly what you need."
+msgstr ""
+
+#: casinos/templates/review.html:422 casinos/templates/review.html:454
+msgid "Visit Website"
+msgstr ""
+
+#: casinos/templates/review.html:429
+msgid "Support"
+msgstr ""
+
+#: casinos/templates/review.html:433
+msgid ""
+"Casino Online has various types of support.You can choose the option that is "
+"most convenient for you from email, phone, or our 24/7 chat"
+msgstr ""
+
+#: casinos/templates/review.html:434
+msgid ""
+"If the request is very urgent, it is better to use chat or telephone support "
+"- they work 24/7"
+msgstr ""
+
+#: casinos/templates/review.html:435
+msgid ""
+"If the issue needs to be considered in great detail, it is better to write "
+"to us by mail"
+msgstr ""
+
+#: casinos/templates/review.html:437
+msgid ""
+"You don&apos;t have to worry about the language barrier. Support works in a "
+"variety of languages around the world"
+msgstr ""
+
+#: casinos/templates/review.html:442
+msgid "Communication options"
+msgstr ""
+
+#: casinos/templates/review.html:445
+msgid "Chat"
+msgstr ""
+
+#: casinos/templates/review.html:448
+msgid "Phone call"
+msgstr ""
+
+#: casinos/templates/review.html:451
+msgid "Mail"
+msgstr ""
