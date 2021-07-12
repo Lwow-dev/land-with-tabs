@@ -1,0 +1,140 @@
+{% load i18n %}
+{% load thumbnail %}
+	<div class="tab-pane" id="tab-content-bonuses">
+		<div class="bonuses-desc content-box-shadow">
+			<h2 class="bonuses-desc__header"><span class="bonuses-desc__name">{{ casino.name }} </span><span class="green-text">{% trans 'Bonuses' %}</span></h2>
+			{% if casino.bonuses_text %}
+				<p class="bonuses-desc__text">
+					{{ casino.bonuses_text }}
+				</p>
+			{% endif %}
+		</div>
+		{% if bonus_no_deposit %}
+			<div class="bonuse">
+				<h2 class="grey-header">
+					<svg>
+						<use xlink:href="/media/images/sprites.svg#no-deposit"></use>
+					</svg><span>No Deposit Bonuses</span>
+				</h2>
+				<div class="bonus_box">
+					{% for bon in bonus_no_deposit %}
+						<div class="bonuse__contentbox">
+							<div class="row">
+								<div class="col-12 col-lg-7">
+									<div class="right-border-box">
+										<p class="bonuse__name">{{ bon.name }}</p>
+										<ul class="bonuse__list">
+											<li class="bonuse__item bonuse__item-present"><span class="green-text-2">{{ bon.bonus_type }}</span></li>
+											{% if bon.min_dep or bon.max_cashout %}
+												<li class="bonuse__item bonuse__item-cash">
+													{% if bon.min_dep %}
+														<div class="bonuse-cash">
+															<span class="bonuse__itemtext">Min. deposit: </span>
+															<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.min_dep }} </span>
+														</div>
+													{% endif %}
+													{% if bon.max_cashout %}
+														<div class="bonuse-cash">
+															<span class="bonuse__itemtext">Max. cashout:</span>
+															<span class="bonuse__value green-text-2">
+																{% if bon.max_cashout == 0 %}
+																	{% trans 'Unlimited' %}
+																{% else %}
+																	{{ country.currency }}{{ bon.max_cashout }}
+																{% endif %}
+															</span>
+														</div>
+													{% endif %}
+												</li>
+											{% endif %}
+
+											{% if bon.wagering %}
+												<li class="bonuse__item bonuse__item-change"><span class="bonuse__itemtext">Wagering requirements:</span><span class="bonuse__value green-text-2">{{ bon.wagering }}x</span></li>
+											{% endif %}
+											{% if bon.max_bet %}
+												<li class="bonuse__item bonuse__item-coins">
+													<span class="bonuse__itemtext">Maximum bet:</span>
+													<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.max_bet }}</span>
+												</li>
+											{% endif %}
+
+											<li class="bonuse__item bonuse__item-time"><span class="bonuse__itemtext">You should get this bonus relatively:</span><span class="bonuse__value green-text-2">{{ bon.get_bonus }}</span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-12 col-lg-5 d-lg-flex align-items-center">
+									<div class="bonuse__btnbox">
+										<p class="bonuse__btntext">Activate bonus in your account</p><a class="visit__btn visit__btn-green" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Get Bonus</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% endif %}
+		{% if bonus_deposit %}
+			<div class="bonuse">
+				<h2 class="grey-header">
+					<svg>
+						<use xlink:href="/media/images/sprites.svg#deposit"></use>
+					</svg><span>Deposit Bonuses</span>
+				</h2>
+				<div class="bonus_box">
+					{% for bon in bonus_deposit %}
+						<div class="bonuse__contentbox">
+							<div class="row">
+								<div class="col-12 col-lg-7">
+									<div class="right-border-box">
+										<p class="bonuse__name">{{ bon.name }}</p>
+										<ul class="bonuse__list">
+											<li class="bonuse__item bonuse__item-present"><span class="green-text-2">{{ bon.bonus_type }}</span></li>
+											{% if bon.min_dep or bon.max_cashout %}
+												<li class="bonuse__item bonuse__item-cash">
+													{% if bon.min_dep %}
+														<div class="bonuse-cash">
+															<span class="bonuse__itemtext">Min. deposit: </span>
+															<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.min_dep }} </span>
+														</div>
+													{% endif %}
+													{% if bon.max_cashout %}
+														<div class="bonuse-cash">
+															<span class="bonuse__itemtext">Max. cashout:</span>
+															<span class="bonuse__value green-text-2">
+																{% if bon.max_cashout == 0 %}
+																	{% trans 'Unlimited' %}
+																{% else %}
+																	{{ country.currency }}{{ bon.max_cashout }}
+																{% endif %}
+															</span>
+														</div>
+													{% endif %}
+												</li>
+											{% endif %}
+
+											{% if bon.wagering %}
+												<li class="bonuse__item bonuse__item-change"><span class="bonuse__itemtext">Wagering requirements:</span><span class="bonuse__value green-text-2">{{ bon.wagering }}x</span></li>
+											{% endif %}
+											{% if bon.max_bet %}
+												<li class="bonuse__item bonuse__item-coins">
+													<span class="bonuse__itemtext">Maximum bet:</span>
+													<span class="bonuse__value green-text-2">{{ country.currency }}{{ bon.max_bet }}</span>
+												</li>
+											{% endif %}
+
+											<li class="bonuse__item bonuse__item-time"><span class="bonuse__itemtext">You should get this bonus relatively:</span><span class="bonuse__value green-text-2">{{ bon.get_bonus }}</span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-12 col-lg-5 d-lg-flex align-items-center">
+									<div class="bonuse__btnbox">
+										<p class="bonuse__btntext">Activate bonus in your account</p><a class="visit__btn visit__btn-green" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Get Bonus</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% endif %}
+	</div>

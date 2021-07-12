@@ -224,7 +224,23 @@ burger.click(function () {
     });
     return "top-menu-active";
   });
-}); // READ MORE, SHOW MORE
+}); 
+
+// COPY BONUS
+
+$(".top__code-btncopy").click(function(){
+  $(".top__code-input").select();
+  document.execCommand('copy');
+  $(".top__code-hide-help").fadeIn().delay(1000).fadeOut();
+});
+
+$(".top__code-input").click(function(){
+  $(".top__code-input").select();
+  document.execCommand('copy');
+  $(".top__code-hide-help").fadeIn().delay(1000).fadeOut();
+});
+
+// READ MORE, SHOW MORE
 
 $(".main-desc__read-more").click(function () {
   $(".main-desc__read-more-text").toggleClass("display-none");
@@ -253,7 +269,9 @@ $(".providers__show-more").mouseover(function () {
       $(".providers__show-more").removeClass("index-z-4");
     });
   });
-}); // SLIDER
+});
+
+ // SLIDER
 
 $("#appraisal-slider").owlCarousel({
   center: true,

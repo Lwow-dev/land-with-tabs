@@ -9377,13 +9377,13 @@ html {
   height: 100%; }
 
 body {
-  background: #121212;
+  background: #0D0D0D;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   height: 100%; }
   @media only screen and (min-width: 768px) {
     body {
-      background: #2F3034; } }
+      background: #171F1C; } }
 
 a {
   text-decoration: none;
@@ -9484,14 +9484,14 @@ a:hover {
           align-items: center; }
 
 .content-box-shadow {
-  background: #202125;
+  background: #0A0A0A;
   -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 20px 25px; }
 
 .content-box {
-  background: #202125;
+  background: #0A0A0A;
   border-radius: 10px;
   padding: 20px 25px; }
 
@@ -9646,7 +9646,7 @@ TOP-SIDEBAR STYLES
 */
 @media only screen and (min-width: 768px) {
   .sticky-container {
-    background: #202125;
+    background: #0A0A0A;
     margin-top: 30px;
     padding: 20px;
     -webkit-box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.17);
@@ -9694,7 +9694,7 @@ TOP-SIDEBAR STYLES
         -ms-flex-align: center;
             align-items: center; }
     .top__imagebox img{
-      height: 100%;
+      /*height: 100%;*/
     }
     @media only screen and (min-width: 480px) {
       .top__imagebox {
@@ -9749,13 +9749,83 @@ TOP-SIDEBAR STYLES
     @media only screen and (min-width: 1400px) {
       .top__btnsbox {
         width: 270px; } }
+
+.top__code{
+  position: relative;
+}
+.top__code-descr{
+  padding-top: 20px;
+  margin: 20px auto 10px;
+  border-top: 1px solid #34353D;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-shadow: 0px 1px 10px #41FFAF;
+  text-align: center;
+  width: 200px;
+}
+@media only screen and (min-width: 768px) {
+  .top__code-descr {
+    padding-top: 30px;
+    margin: 40px auto 10px;
+  } 
+}
+.top__code-btncopy{
+  background: none;
+  border: none;
+}
+.top__code-input{
+  background: url(../images/code_field.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #0A0A0A;
+  cursor: pointer;
+  text-shadow: 0px 1px 10px #41FFAF;
+}
+.top__code-input:focus-visible{
+  outline: none;
+  }
+ @media only screen and (min-width: 480px) {
+      .top__code-input {
+        width: 270px; } }
+    @media only screen and (min-width: 768px) {
+      .top__code-input {
+        width: 206px; } }
+    @media only screen and (min-width: 1200px) {
+      .top__code-input {
+        width: 100%; } }
+    @media only screen and (min-width: 1400px) {
+      .top__code-input {
+        width: 270px; } }
+
+.top__code-hide-help{
+  position: absolute;
+  padding: 2px 10px;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 8px;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+
+
   .top__pay-method-head {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #34353D;
     font-size: 12px;
     font-weight: 500;
-    text-align: center; }
+    text-align: center;
+    width: 200px; }
     @media only screen and (min-width: 768px) {
       .top__pay-method-head {
         padding-top: 30px;
@@ -9789,14 +9859,14 @@ TAB-HEADERS STYLE
   .tab {
     margin-top: 30px;
     border-radius: 0 20px 20px 0;
-    background: #16171B;
+    background: #000;
     height: 100%; } }
 
 .tab__headers {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #121212;
+  background: #0D0D0D;
   padding: 0 15px;
   z-index: 2;
   -webkit-box-shadow: 0px -5px 28px rgba(0, 0, 0, 0.5);
@@ -9818,7 +9888,7 @@ TAB-HEADERS STYLE
   width: 25%; }
   @media (min-width: 768px) {
     .tab__nav-item {
-      background: #202125;
+      background: #171F1C;
       border-radius: 10px 10px 0px 0px;
       margin: 20px 5px 0;
       width: 95px; } }
@@ -9933,7 +10003,7 @@ ul.nav.nav-tabs {
     color: #00FFA9; }
     @media (min-width: 768px) {
       .nav-tabs .nav-item.show .nav-link.active, .nav-tabs .nav-link.tab__btn.active {
-        background: #16171B; } }
+        background: #000; } }
     .nav-tabs .nav-item.show .nav-link.active svg, .nav-tabs .nav-link.tab__btn.active svg {
       fill: #00FFA9; }
     .nav-tabs .nav-item.show .nav-link.active .tab__prefix, .nav-tabs .nav-link.tab__btn.active .tab__prefix {
@@ -10117,7 +10187,7 @@ DETAILS BLOCK
 
 .details-games__read-more {
   margin-top: 0;
-  background: #202125;
+  background: #0A0A0A;
   -webkit-box-shadow: 0px -5px 28px rgba(0, 0, 0, 0.5);
           box-shadow: 0px -5px 28px rgba(0, 0, 0, 0.5);
   border-radius: 0px 0px 10px 10px;
@@ -10292,7 +10362,7 @@ DETAILS BLOCK
   position: relative; }
   @media only screen and (min-width: 480px) {
     .providers__content-box {
-      background: #202125; } }
+      background: #0A0A0A; } }
   @media only screen and (min-width: 576px) {
     .providers__content-box {
       display: -webkit-box;
@@ -10367,7 +10437,7 @@ DETAILS BLOCK
   top: 40px;
   right: 0;
   width: 405px;
-  background: #202125;
+  background: #0A0A0A;
   border-radius: 10px 0 10px 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -10393,7 +10463,7 @@ DETAILS BLOCK
     width: 100%;
     height: auto;
     margin: 70px 0 130px;
-    background: #16171B;
+    background: #000;
     -webkit-box-shadow: 0px -23px 69px rgba(0, 0, 0, 0.25);
             box-shadow: 0px -23px 69px rgba(0, 0, 0, 0.25); }
   .appraisal__owlbox {
@@ -10404,7 +10474,7 @@ DETAILS BLOCK
         -ms-flex-align: stretch;
             align-items: stretch; }
   .appraisal__item {
-    background: #16171B;
+    background: #000;
     -webkit-box-shadow: 0px 39px 30px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 39px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -10520,7 +10590,7 @@ BONUSES TAB
     padding: 20px; }
     @media only screen and (min-width: 480px) {
       .bonuse__contentbox {
-        background: #202125;
+        background: #0A0A0A;
         border-radius: 10px;
         padding: 30px 35px; }
       div.bonuse__contentbox:not(:first-child){
@@ -10687,7 +10757,7 @@ REPUTATION TAB
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      background: #202125;
+      background: #0A0A0A;
       border-radius: 10px;
       -ms-flex-pack: distribute;
           justify-content: space-around; } }
@@ -10770,7 +10840,7 @@ REPUTATION TAB
         border-radius: 0 10px 0 0; } }
   .rep__box {
     position: relative;
-    background: #202125;
+    background: #0A0A0A;
     padding: 10px 90px 10px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10842,7 +10912,7 @@ REPUTATION TAB
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #202125;
+    color: #0A0A0A;
     font-size: 8px;
     position: absolute;
     right: -25%;
@@ -10858,7 +10928,7 @@ REPUTATION TAB
     font-size: 12px;
     line-height: 110%;
     position: absolute;
-    background: #202125;
+    background: #0A0A0A;
     background: #35363A;
     border-radius: 10px 10px 0px 10px;
     color: #FFFFFF;
@@ -10926,7 +10996,7 @@ REPUTATION TAB
     border-radius: 0 0 95px 10px; }
     @media only screen and (min-width: 480px) {
       .rep__value {
-        background: #202125;
+        background: #0A0A0A;
         border-radius: inherit;
         padding: 10px;
         font-size: 8px; } }
@@ -11022,7 +11092,7 @@ PAYMENT METHODS TAB
   margin-top: 30px; }
   @media only screen and (min-width: 992px) {
     .pay {
-      background: #202125;
+      background: #0A0A0A;
       border-radius: 10px;
       overflow: hidden; } }
   .pay tbody, .pay td, .pay tfoot, .pay th, .pay thead, .pay tr {
@@ -11082,7 +11152,7 @@ PAYMENT METHODS TAB
       -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
               box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
-      background: #202125;
+      background: #0A0A0A;
       box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       margin-bottom: 30px;
@@ -11150,7 +11220,7 @@ PAYMENT METHODS TAB
           width: 100%; } }
     @media only screen and (min-width: 992px) {
       .pay tbody tr:nth-child(even) {
-        background: #2F3034; } }
+        background: #171F1C; } }
   .pay__methodbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11230,7 +11300,7 @@ PAYMENT METHODS TAB
   padding: 0;
   position: fixed;
   top: 52px;
-  background: #202125;
+  background: #0A0A0A;
   z-index: 4;
   height: calc(100% - 49px - 52px);
   opacity: .2;

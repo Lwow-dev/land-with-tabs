@@ -4,7 +4,7 @@ from modeltranslation.translator import translator, TranslationOptions
 from .models import Casino, Countries, Game
 
 class CasinoTranslationOptions(TranslationOptions):
-    fields = ('link', 'adv1', 'adv2', 'adv3', 'adv4',)
+    fields = ('link',)
     
 class CountriesTranslationOptions(TranslationOptions):
     fields = ('text', 'header',)

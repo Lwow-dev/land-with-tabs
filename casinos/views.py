@@ -8,7 +8,7 @@ import numpy as np
 
 from django.utils import translation
 
-from .models import Casino, Software, Countries, Game
+from .models import Casino, Software, Countries, Game, PayCountry, CasinoCountryPay
 from django.views.decorators.cache import never_cache
 
 def get_anid(request):
@@ -43,23 +43,22 @@ def home(request):
 def show_review(request, review_slug):
     casino = get_object_or_404(Casino, slug=review_slug)
     games = Game.objects.all()
+
     if request.GET:
         gambler_id = get_anid(request)
     else:
         gambler_id=False
-    
-    bonus_no_deposit = []
-    bonus_deposit = []
-    for bonus in casino.bonus.all():
-        if bonus.is_deposit == '0':
-            bonus_no_deposit.append(bonus)
-        elif bonus.is_deposit == '1':
-            bonus_deposit.append(bonus)
-            
+
+    bonus_no_deposit = casino.bonus.filter(is_deposit = '0')
+    bonus_deposit = casino.bonus.filter(is_deposit = '1')
+
     lang = translation.get_language()
     country = Countries.objects.get(slug = lang)
 
-    context = {'casino': casino, 'games':games, 'gambler_id':gambler_id,  'bonus_no_deposit': bonus_no_deposit, 'bonus_deposit':bonus_deposit, 'country': country }
+    countryPaysList = CasinoCountryPay.objects.filter(casino=casino)
+    payCasinoList = casino.casinoCountryPay.filter(countries=country)
+
+    context = {'casino': casino, 'games':games, 'gambler_id':gambler_id,  'bonus_no_deposit': bonus_no_deposit, 'bonus_deposit':bonus_deposit, 'country': country, 'countryPaysList': countryPaysList, 'payCasinoList':payCasinoList }
     return render(request, 'review.html', context)
     
 @never_cache

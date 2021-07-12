@@ -1,0 +1,186 @@
+{% load i18n %}
+{% load thumbnail %}
+	<div class="tab-pane" id="tab-content-rep">
+		<div class="reputation-desc content-box-shadow">
+			<h2 class="reputation-desc__header"><span class="green-text">Reputation rating of </span><span class="reputation-desc__name">{{ casino.name }} explained</span></h2>
+			{% if casino.reputation_text %}
+				<p class="reputation-desc__text">
+					{{ casino.reputation_text }}												
+				</p>
+			{% endif %}
+		</div>
+		<div class="rep">
+			<div class="rep__appraisal">
+				<div class="rep__appraisal-imgbox"><img src="/media/images/top-rep-icon.svg"></div>
+				<div class="rep__appraisal-text">Perfect Reputation</div>
+			</div>
+			<div class="rep__item">
+				<div class="rep__box">
+					<div class="rep__text">	Casino revenues <br>	(last 4 years)<span class="rep__btn-info rep__btn-info-0">i</span>
+						<div class="rep__hover rep__hover-0 display-none">Bigger casinos are generally safer for players, because their high revenues allow them to pay out even very big wins without any issues and their quality has been proven by a large number of players. We take into account estimated revenues over the last 4 years. </div>
+					</div>
+					<div class="rep__diagram">
+						<div class="rep__figurebox"><span class="rep__figure wow">{{casino.revenues_score}}</span><span>%</span></div>
+						<div class="border-gradient border-gradient-1">
+							<style>
+								.border-gradient-1{
+									background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{ casino.revenues_score }}%, #E8290F 0%);
+								}
+							</style>
+						</div>
+					</div>
+				</div>
+				<div class="rep__value"> 
+					<span>
+						{% if casino.revenues_score >= 90 %}
+							{% trans 'Very big' %}
+						{% elif casino.revenues_score >= 70 %}
+							{% trans 'Big' %}
+						{% elif casino.revenues_score >= 50 %}
+							{% trans 'Avarage' %}
+						{% elif casino.revenues_score >= 30 %}
+							{% trans 'Small' %}
+						{% elif casino.revenues_score >= 10 %}
+							{% trans 'Very small' %}
+						{% elif casino.revenues_score < 10 %}
+							{% trans 'Almost not' %}
+						{% endif %}
+					</span>
+				</div>
+			</div>
+			<div class="rep__item">
+				<div class="rep__box">
+					<div class="rep__text">Terms and conditions<span class="rep__btn-info rep__btn-info-1">i</span>
+						<div class="rep__hover rep__hover-1 display-none">We go over the terms and condition of each casino and look for unfair rules that could potentially be used against players. Any clauses we consider to be unfair result in a lower reputation rating for the casino.</div>
+					</div>
+					<div class="rep__diagram">
+						<div class="rep__figurebox"><span class="rep__figure wow">{{casino.terms_score}}</span><span>%</span></div>
+						<div class="border-gradient border-gradient-2">
+							<style>
+								.border-gradient-2{
+									background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{casino.terms_score}}%, #E8290F 0%); 
+								}
+							</style>
+						</div>
+					</div>
+				</div>
+				<div class="rep__value"> 
+					<span>
+						{% if casino.terms_score >= 90 %}
+							{% trans 'Fair' %}
+						{% elif casino.terms_score >= 70 %}
+							{% trans 'Mostly fair' %}
+						{% elif casino.terms_score >= 50 %}
+							{% trans 'Avarage' %}
+						{% elif casino.terms_score >= 30 %}
+							{% trans 'Not very fair' %}
+						{% elif casino.terms_score >= 10 %}
+							{% trans 'Unfair' %}
+						{% elif casino.terms_score < 10 %}
+							{% trans 'Very unfair' %}
+						{% endif %}
+					</span>
+				</div>
+			</div>
+			<div class="rep__item">
+				<div class="rep__box">
+					<div class="rep__text">Blacklists<span class="rep__btn-info rep__btn-info-2">i</span>
+						<div class="rep__hover rep__hover-2 display-none">If a casino appears on reputable blacklists, it is usually a sign that it has some negative qualities. We consider each blacklist and decrease the casino’s rating based on its seriousness and our view of the situation.</div>
+					</div>
+					<div class="rep__diagram">
+						<div class="rep__figurebox"><span class="rep__figure wow">{{casino.blacklist_score}}</span><span>%</span></div>
+						<div class="border-gradient border-gradient-3">
+							<style>
+								.border-gradient-3{
+									background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{casino.blacklist_score}}%, #E8290F 0%);
+								}
+								
+							</style>
+						</div>
+					</div>
+				</div>
+				<div class="rep__value"> 
+					<span>
+						{% if casino.blacklist_score >= 90 %}
+							{% trans 'None' %}
+						{% elif casino.blacklist_score >= 70 %}
+							{% trans 'Mostly none' %}
+						{% elif casino.blacklist_score >= 50 %}
+							{% trans 'Not serious lists' %}
+						{% elif casino.blacklist_score >= 30 %}
+							{% trans 'In Blacklist' %}
+						{% endif %}
+					</span>
+				</div>
+			</div>
+			<div class="rep__item">
+				<div class="rep__box">
+					<div class="rep__text">Size to complaints ratio<span class="rep__btn-info rep__btn-info-3">i</span>
+						<div class="rep__hover rep__hover-3 display-none">Player complaints signify that the casino does not treat players right or deal with certain situations correctly. We consider the number and seriousness of complaints in relation to the casino’s size, as it can be expected that sites with more players will also have more complaints. Complaints about related casinos are also taken into account.</div>
+					</div>
+					<div class="rep__diagram">
+						<div class="rep__figurebox"><span class="rep__figure wow">{{ casino.complaints_score }}</span><span>%</span></div>
+						<div class="border-gradient border-gradient-4">
+							<style>
+								.border-gradient-4{
+									background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{ casino.complaints_score }}%, #E8290F 0%);
+								}
+							</style>
+						</div>
+					</div>
+				</div>
+				<div class="rep__value">
+					<span>
+				 		{% if casino.complaints_score >= 90 %}
+							{% trans 'Very good' %}
+						{% elif casino.complaints_score >= 70 %}
+							{% trans 'Good' %}
+						{% elif casino.complaints_score >= 50 %}
+							{% trans 'Avarage' %}
+						{% elif casino.complaints_score >= 30 %}
+							{% trans 'Not good' %}
+						{% elif casino.complaints_score >= 10 %}
+							{% trans 'Negative' %}
+						{% elif casino.complaints_score < 10 %}
+							{% trans 'Very negative' %}
+						{% endif %}
+					</span>
+				</div>
+			</div>
+			<div class="rep__item">
+				<div class="rep__box">
+					<div class="rep__text">Other factors<span class="rep__btn-info rep__btn-info-4">i</span>
+						<div class="rep__hover rep__hover-4 display-none">On top of the previous four factors, there can also be other miscellaneous characteristics of the casino that influence its reputation rating.</div>
+					</div>
+					<div class="rep__diagram">
+						<div class="rep__figurebox"><span class="rep__figure wow">{{ casino.other_score }}</span><span>%</span></div>
+						<div class="border-gradient border-gradient-5">
+							<style>
+								.border-gradient-5{
+									background: conic-gradient(from 180deg at 50% 50%, #008143 0deg, #00A053 88.12deg, #00FF85 {{ casino.other_score }}%, #E8290F 0%);
+								} 
+							</style>
+						</div>
+					</div>
+				</div>
+				<div class="rep__value">
+					<span>
+						{% if casino.other_score >= 90 %}
+							{% trans 'Very positive' %}
+						{% elif casino.other_score >= 70 %}
+							{% trans 'Mostly positive' %}
+						{% elif casino.other_score >= 50 %}
+							{% trans 'Neutral' %}
+						{% elif casino.other_score >= 30 %}
+							{% trans 'Not positive' %}
+						{% elif casino.other_score >= 10 %}
+							{% trans 'Negative' %}
+						{% elif casino.other_score < 10 %}
+							{% trans 'Very negative' %}
+						{% endif %}
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="rep-btnbox visit-btnsbox"><a class="visit__btn visit__btn-orange" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Visit Casino</a><a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Browse recommended casinos</a></div>
+	</div>

@@ -1,0 +1,274 @@
+{% load i18n %}
+{% load thumbnail %}
+		<div class="tab-pane show active" id="tab-content-details">
+			<div class="main-desc content-box-shadow">
+				<h1 class="main-desc__header"><span class="main-desc__name">{{ casino.name }} </span><span class="green-text">{% trans 'Review' %}</span></h1>
+				{% if casino.details_text_visible or casino.details_text_hidden %}
+					<div class="main-desc__textbox">
+						<p class="main-desc__text visible-text">
+							{{ casino.details_text_visible }}
+						</p>
+						<div class="unvisible-text">
+							{{ casino.details_text_hidden|safe }}
+						</div>
+					</div>
+					{% if casino.details_text_hidden %}
+						<div class="main-desc__read-more read-more green-text"><img class="main-desc__read-more-img" src="/media/images/read-more-arrow.png"><span class="main-desc__read-more-text">{% trans 'Read more' %}</span><span class="main-desc__read-less-text display-none">{% trans 'Read less' %}</span></div>
+					{% endif %}
+				{% endif %}	
+			</div>
+			<div class="row mt-3">
+				<div class="col-12 col-lg-6">
+					<div class="details-bonuses">
+						<h2 class="grey-header">
+							<svg>
+								<use xlink:href="/media/images/sprites.svg#bonuses"></use>
+							</svg><span>{% trans 'Bonuses' %}</span>
+						</h2>
+						<div class="details-bonuses__item content-box">
+							{% if bonus_no_deposit.0 %}
+								<div class="svg-text-box">
+									<svg>
+										<use xlink:href="/media/images/sprites.svg#bonuses"></use>
+									</svg>
+									<div class="details-bonuses__textbox">
+										<div class="grey-string">{% trans 'No Deposit Bonus' %}</div>
+										<div class="white-string">
+												{{bonus_no_deposit.0.name}}
+										</div>
+									</div>
+								</div>
+							{% else %}
+								<div class="svg-text-box">
+									<svg >
+										<use xlink:href="/media/images/sprites.svg#cross-bonus"></use>
+									</svg>
+									<div class="details-bonuses__textbox">
+										<div class="grey-string">{% trans 'No Deposit Bonus' %}</div>
+										<div class="white-string">
+											{% trans 'No bonus' %}
+										</div>
+									</div>
+								</div>
+							{% endif %}
+							<a class="details-bonuses__link" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >
+								<svg>
+									<use xlink:href="/media/images/sprites.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="details-bonuses__item content-box">
+							{% if bonus_deposit.0 %}
+							<div class="svg-text-box">
+								<svg>
+									<use xlink:href="/media/images/sprites.svg#bonuses"></use>
+								</svg>
+								<div class="details-bonuses__textbox">
+									<div class="grey-string">{% trans 'Deposit Bonus' %}</div>
+									<div class="white-string">
+											{{bonus_deposit.0.name}}
+									</div>
+								</div>
+							</div>
+							{% else %}
+								<div class="svg-text-box">
+									<svg>
+										<use xlink:href="/media/images/sprites.svg#cross-bonus"></use>
+									</svg>
+									<div class="details-bonuses__textbox">
+										<div class="grey-string">{% trans 'Deposit Bonus' %}</div>
+										<div class="white-string">
+												{% trans 'No bonus' %}
+										</div>
+									</div>
+								</div>
+							{% endif %}
+							<a class="details-bonuses__link" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >
+								<svg>
+									<use xlink:href="/media/images/sprites.svg#arrow-right"></use>
+								</svg></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 mt-2 mt-sm-0">
+					<h2 class="grey-header">
+						<svg>
+							<use xlink:href="/media/images/sprites.svg#details-games-header"></use>
+						</svg><span>{% trans 'Games' %}</span>
+					</h2>
+					<div class="details-games">
+						<div class="show-hide-gamebox content-box">
+							{% for active in casino.games.all %}
+								<div class="games-box games-box-active">
+									<svg>
+										<use xlink:href="/media/images/sprites.svg#{{active.svg_name}}"></use>
+									</svg><span>{{active.name}}</span>
+								</div>
+							{% endfor %}
+						</div>
+						<div class="details-games__read-more read-more"><img class="details-games__read-more-img" src="/media/images/read-more-arrow.png">
+							<svg class="details-games__read-more-img-hand">
+								<use xlink:href="/media/images/sprites.svg#press-button"></use>
+							</svg><span class="details-games__read-more-text">Show more</span><span class="details-games__read-less-text display-none">Show  less</span>
+							<div class="details-games__prefix prefix-orange">
+								{{ casino.games.all|length }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-12 col-sm-6">
+					<div class="language">
+						<h2 class="grey-header">
+							<svg>
+								<use xlink:href="/media/images/sprites.svg#language"></use>
+							</svg><span>Language options</span>
+						</h2>
+						<div class="language__content-box content-box">
+							<div class="language__str">
+								<div class="language__logo-text">
+									<img src="/media/images/countries/{{ LANGUAGE_CODE }}.svg">
+									<span class="language__name">
+										{{ country }} 
+									</span>
+									<span class="language__text">
+										Website
+									</span>
+								</div>
+								<div class="language__all language__all-1">
+									<span class="language__all-text">
+										All languages
+									</span>
+									<span class="show__all-btn">
+										<span></span><span></span><span></span></span>
+									<div class="language__prefix prefix-orange">{{ casino.languages_website.all|length }}</div>
+									<div class="lang-hover content-box lang-hover-1 display-none">
+										<div class="lang-hover__head">All website languages</div>
+										<div class="lang-hover__flexbox">
+											{% for lang in casino.languages_website.all %}
+												<div class="lang-hover__item">
+													<img src="/media/images/countries/{{ lang.slug }}.svg">
+													<span class="lang-hover__name">
+														{{ lang.name }} 
+													</span>
+												</div>
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="language__str">
+								<div class="language__logo-text">
+									<img src="/media/images/countries/{{ LANGUAGE_CODE }}.svg">
+									<span class="language__name">
+										{{ country }} 
+									</span>
+									<span class="language__text">Customer Support</span>
+								</div>
+								<div class="language__all language__all-2">
+									<span class="language__all-text">All languages</span>
+									<span class="show__all-btn"><span></span><span></span><span></span></span>
+									<div class="language__prefix prefix-orange">{{ casino.languages_support.all|length }}</div>
+									<div class="lang-hover content-box lang-hover-2 display-none">
+										<div class="lang-hover__head">All Customer Support languages</div>
+										<div class="lang-hover__flexbox">
+											{% for lang in casino.languages_support.all %}
+												<div class="lang-hover__item">
+													<img src="/media/images/countries/{{ lang.slug }}.svg">
+													<span class="lang-hover__name">
+														{{ lang.name }} 
+													</span>
+												</div>
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="language__str">
+								<div class="language__logo-text">
+									<img src="/media/images/countries/{{ LANGUAGE_CODE }}.svg">
+									<span class="language__name">
+										{{ country }} 
+									</span>
+									<span class="language__text">Live Chat</span></div>
+								<div class="language__all language__all-3"><span class="language__all-text">All languages</span><span class="show__all-btn"><span></span><span></span><span></span></span>
+									<div class="language__prefix prefix-orange">{{ casino.languages_chat.all|length }}</div>
+									<div class="lang-hover content-box lang-hover-3 display-none">
+										<div class="lang-hover__head">All livechat languages</div>
+										<div class="lang-hover__flexbox">
+											{% for lang in casino.languages_chat.all %}
+												<div class="lang-hover__item">
+													<img src="/media/images/countries/{{ lang.slug }}.svg">
+													<span class="lang-hover__name">
+														{{ lang.name }} 
+													</span>
+												</div>
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 mt-2 mt-sm-0">
+					<div class="providers">
+						<h2 class="grey-header">
+							<svg>
+								<use xlink:href="/media/images/sprites.svg#providers"></use>
+							</svg><span>Games providers</span>
+						</h2>
+						<div class="providers__content-box content-box">
+							<div class="providers__flexbox">
+								{% for soft in casino.providers.all %}
+									<img src="{{ soft.logo.url }}" title="{{ soft.name }}" alt="{{ soft.name }}">
+								{% endfor %}
+							</div>
+							<div class="providers__show-more"><span class="providers__show-more-text">Show more</span><span class="show__all-btn"><span></span><span></span><span></span></span>
+								<div class="providers__prefix prefix-orange">{{ casino.providers.all|length }}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="appraisal">
+				<div class="appraisal__owlbox owlbox">
+					<div class="owl-carousel owl-theme" id="appraisal-slider">
+						<div class="appraisal__item">
+							<h3 class="appraisal__header appraisal__header-positive">Positives</h3>
+							<ul class="appraisal__list appraisal__list-positive">
+								{% for appr in casino.appraisal.all %}
+									{% if appr.grad_appraisal == 'pos' %}
+										<li>{{ appr.text_appraisal }}</li>
+									{% endif %}
+								{% endfor %}
+							</ul>
+						</div>
+						<div class="appraisal__item">
+							<h3 class="appraisal__header appraisal__header-negative">Negatives</h3>
+							<ul class="appraisal__list appraisal__list-negative">
+								{% for appr in casino.appraisal.all %}
+									{% if appr.grad_appraisal == 'neg' %}
+										<li>{{ appr.text_appraisal }}</li>
+									{% endif %}
+								{% endfor %}
+								<!-- <li>Lots of restricted countries</li> -->
+							</ul>
+						</div>
+						<div class="appraisal__item">
+							<h3 class="appraisal__header appraisal__header-interest">Interesting Facts</h3>
+							<ul class="appraisal__list appraisal__list-interest">
+								{% for appr in casino.appraisal.all %}
+									{% if appr.grad_appraisal == 'int' %}
+										<li>{{ appr.text_appraisal }}</li>
+									{% endif %}
+								{% endfor %}
+								<!-- <li>Big casino popular in Germany</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="details-btnbox visit-btnsbox"><a class="visit__btn visit__btn-orange"href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Visit Casino</a><a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Browse recommended casinos</a></div>
+		</div>

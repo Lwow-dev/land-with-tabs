@@ -1,0 +1,71 @@
+{% load i18n %}
+{% load thumbnail %}
+	<div class="tab-pane" id="tab-content-pay">
+		<div class="pay-desc content-box-shadow">
+			<h2 class="pay-desc__header"><span class="pay-desc__name">{{ casino.name }} </span><span class="green-text">payment methods</span></h2>
+			{% if casino.pay_text %}
+				<p class="pay-desc__text">{{ casino.pay_text }}</p>
+			{% endif %}
+		</div>
+		<div class="pay">
+			<table>
+				<thead>
+					<tr>
+						<th>Payment Method </th>
+						<th>	Deposit<br>Limits &amp; fees</th>
+						<th>	Withdrawal<br>	Limits &amp; fees </th>
+						<th> Withdrawal Time </th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for pay in countryPaysList.all %}
+						{% if pay.countryPay.countries == country %}
+						<tr> 
+							<td class="pay__td-first">
+								<div class="pay__methodbox">
+									<div class="pay__logo"><img src="{{ pay.countryPay.payment.logo.url }}"></div>
+									<div class="pay__name">
+										{{ pay.countryPay.payment.name }}
+									</div>
+								</div>
+							</td>
+							<td class="pay__td">
+								<div class="responsive-before">
+									 	Deposit<br>Limits &amp; fees</div>
+								<div class="pay__value">
+									{% if pay.deposit_limit_min or pay.deposit_limit_max %}
+										{{ country.currency }}{{ pay.deposit_limit_min }} - {{ country.currency }}{{pay.deposit_limit_max}}
+									{% else %}
+										{% trans 'Not Available' %}
+									{% endif %}
+								</div>
+							</td>
+							<td class="pay__td">
+								<div class="responsive-before">	Withdrawal<br>	Limits &amp; fees</div>
+								<div class="pay__value">
+									{% if pay.withdrawal_limit_min or pay.withdrawal_limit_max %}
+										{{ country.currency }}{{ pay.withdrawal_limit_min }} - {{ country.currency }}{{pay.withdrawal_limit_max}}
+									{% else %}
+										{% trans 'Not Available' %}
+									{% endif %}
+								</div>
+							</td>
+							<td class="pay__td">
+								<div class="responsive-before">Withdrawal Time</div>
+								<div class="pay__value">
+									{% if pay.withdrawal_time_min or pay.withdrawal_time_max %}
+										{{ pay.withdrawal_time_min }} - {{ pay.withdrawal_time_max }} {% trans 'days' %}
+									{% else %}
+										-
+									{% endif %}
+								</div>
+							</td>
+						</tr>
+						{% endif %}
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<div class="pay-btnbox visit-btnsbox"><a class="visit__btn visit__btn-orange" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Visit Casino</a><a class="visit__btn visit__btn-black" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Browse recommended casinos</a></div>
+		<div class="pay-btnbox-green"><a class="visit__btn visit__btn-green" href="/{{ LANGUAGE_CODE }}/{{ casino.slug }}/go/{% if gambler_id %}?anid={{ gambler_id }}{% endif %}" onclick="ym(80110621,'reachGoal','{{ casino.slug }}');" target="blank" >Get Bonus</a></div>
+	</div>
